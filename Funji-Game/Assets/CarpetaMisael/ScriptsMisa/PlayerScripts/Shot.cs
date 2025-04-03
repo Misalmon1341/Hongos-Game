@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    public ActiveGunPlayer ActiveGunPlayer;
+    
     public GameObject bullet;
     public Transform spawnPoint;
     private int numeroGun;
@@ -14,11 +14,6 @@ public class Shot : MonoBehaviour
 
     private float shotRateTime = 0;
 
-
-    private void Start()
-    {
-        //numeroGun = nt.GetComponent<ActiveGunPlayer>();
-    }
     private void Update()
     {
 

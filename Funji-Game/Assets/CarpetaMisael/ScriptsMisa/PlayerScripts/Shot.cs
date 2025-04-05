@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    
-    public GameObject bullet;
+
+    public GameObject[] bulletPrefabs;
     public Transform spawnPoint;
     private int numeroGun;
+
+    public CardUIManager cardUI;
+
 
     public float shotForce = 1500;
     public float shotRate = 0.5f;
@@ -16,21 +19,23 @@ public class Shot : MonoBehaviour
 
     private void Update()
     {
-
-
         if (Input.GetButtonDown("Fire1"))
         {
-            if(Time.time > shotRateTime)
+            if (Time.time > shotRateTime)
             {
-                GameObject newBullet;
+                if (cardUI != null && cardUI.CardCount() > 0)
+                {
+                    int tipoDeCarta = cardUI.UseCard(0); 
 
-                newBullet = Instantiate(bullet,spawnPoint.position,spawnPoint.rotation);
+                    if (tipoDeCarta >= 0 && tipoDeCarta < bulletPrefabs.Length)
+                    {
+                        GameObject newBullet = Instantiate(bulletPrefabs[tipoDeCarta], spawnPoint.position, spawnPoint.rotation);
+                        newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+                        Destroy(newBullet, 2f);
 
-                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward*shotForce);
-
-                shotRateTime = Time.time + shotRate;
-
-                Destroy(newBullet,2);
+                        shotRateTime = Time.time + shotRate;
+                    }
+                }
             }
         }
     }

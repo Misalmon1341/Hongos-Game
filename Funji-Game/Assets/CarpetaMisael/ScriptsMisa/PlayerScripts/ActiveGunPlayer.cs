@@ -6,6 +6,7 @@ public class ActiveGunPlayer : MonoBehaviour
 {
     public TakeGuns takeGuns;
     public int numeroArma;
+    
 
     private void Start()
     {
@@ -16,8 +17,12 @@ public class ActiveGunPlayer : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            takeGuns.ActiveGuns(numeroArma);
-            Destroy(gameObject);
+            bool wasTook = takeGuns.ActiveGuns(numeroArma);
+
+            if(wasTook)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -3060,63 +3060,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988041607}
   m_Mesh: {fileID: -7006015688883336222, guid: b7e98af8a925cb24b952f2a6d311fd15, type: 3}
---- !u!1001 &1031886560
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.324018
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.63
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -44.751
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
-      propertyPath: m_Name
-      value: maya bake bien
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d420613630cc9945b1eb4b17938b09a, type: 3}
 --- !u!1 &1033138088
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,6 +3711,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4893431655465348406, guid: 90c2e55251d3c8d44ad18fbe3ac717e7, type: 3}
   m_PrefabInstance: {fileID: 952338954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1231300534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7872293
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.562
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -44.340034
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      propertyPath: m_Name
+      value: maya bake bien 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
 --- !u!1 &1336939367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,4 +6403,4 @@ SceneRoots:
   - {fileID: 1130319460}
   - {fileID: 131071304}
   - {fileID: 1672003418}
-  - {fileID: 1031886560}
+  - {fileID: 1231300534}

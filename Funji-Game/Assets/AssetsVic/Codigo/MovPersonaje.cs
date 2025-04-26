@@ -7,9 +7,10 @@ public class MovPersonaje : MonoBehaviour
 {
     [Header("Personaje")]
     private Animator animacion;
-    private float velocidad = 1.5f;
+    public float velocidad = 1.5f;
     private float hInput;
-    private Quaternion rotacionPersonaje;
+    private float rotacionPersonaje;
+    private string direccion = "Derecha";
     private CharacterController controlPersonaje;
     private Vector3 movimiento;
     [Header("Gravedad")]
@@ -23,8 +24,8 @@ public class MovPersonaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animacion = GetComponent<Animator>();
-        controlPersonaje = GetComponent<CharacterController>();
+        animacion = this.GetComponent<Animator>();
+        controlPersonaje = this.GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }
 
@@ -38,35 +39,32 @@ public class MovPersonaje : MonoBehaviour
     {
         hInput = Input.GetAxisRaw("Horizontal");
         movimiento.x = hInput * velocidad;
-        if (controlPersonaje.isGrounded)
+        if (hInput > 0)
         {
-            enElAire = false;
-            saltoDoble = true;
-            animacion.SetBool(name: "Saltando", value: false);
-            animacion.SetBool(name: "Caminando", value: false);
-        }
-        else
-        {
-            if (saltoDoble && Input.GetButtonDown("Jump"))
+            if (direccion == "Izquierda")
             {
-                saltoDoble=false;
-                movimiento.y = FuerzaSalto;
-                animacion.SetBool(name: "Saltando", value: false);
+                rotacionPersonaje = -180f;
+                this.transform.Rotate(Vector3.up, rotacionPersonaje);
+                direccion = "Derecha";
             }
-            movimiento.y -= gravedad;
+            animacion.SetBool(name: "Running", value: true);
+            controlPersonaje.SimpleMove(movimiento);
+            return;
         }
-        if (hInput != 0)
+        if(hInput < 0)
         {
-            rotacionPersonaje = Quaternion.LookRotation(new Vector3(x:hInput, y: 0, z: 0));
-            this.transform.rotation = rotacionPersonaje;
-            animacion.SetBool(name: "Caminando", value: true);
-        } 
-        if (Input.GetButtonDown("Jump")&& !enElAire)
-        {
-            enElAire= true; 
-            animacion.SetBool(name:"Saltando",value:true);
-            movimiento.y = FuerzaSalto;
+            if (direccion == "Derecha")
+            {
+                rotacionPersonaje = 180f;
+                this.transform.Rotate(Vector3.up,rotacionPersonaje);
+                direccion = "Izquierda";
+            }
+            animacion.SetBool(name:"Running",value:true);
+            controlPersonaje.SimpleMove(movimiento);
+            return;
         }
-        controlPersonaje.Move(motion: movimiento * Time.deltaTime);
+
+        animacion.SetBool("Running", false);
+        
     }
 }

@@ -9,27 +9,34 @@ public class MovPersonaje : MonoBehaviour
     private Animator animacion;
     public float velocidad = 1.5f;
     private float hInput;
-    private float rotacionPersonaje;
-    private string direccion = "Derecha";
+    private Quaternion rotacionPersonaje;
     private CharacterController controlPersonaje;
     private Vector3 movimiento;
     [Header("Gravedad")]
-    [SerializeField] private float gravedad;
+    private float gravedad = 9.8f;
     [Header("Salto")]
-    private float FuerzaSalto = 5f;
+    private float fuerzaSalto = 4f;
     private bool enElAire = false;
     [Header("SaltoDoble")]
     private bool saltoDoble = false;
+    [Header("Dash")]
+    private float velocidadDash = 7f;
+    private float duracionDash = 0.15f;
+    private bool dashActivo = false;
+    [Header("Coyote")]
+    private bool coyoteActivo = true;
+    private float tiempoCoyote = 0;
+    private float duracionCoyoteTime = 0.05f;
+    [Header("Buffer")]
+    private float tiempoBufferSalto = 0f;
+    private float duracionBufferSalto = 0.1f;
 
-    // Start is called before the first frame update
     void Start()
     {
         animacion = this.GetComponent<Animator>();
         controlPersonaje = this.GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }
-
-    // Update is called once per frame
     void Update()
     {
         moverPersonaje();
@@ -39,32 +46,93 @@ public class MovPersonaje : MonoBehaviour
     {
         hInput = Input.GetAxisRaw("Horizontal");
         movimiento.x = hInput * velocidad;
-        if (hInput > 0)
+        if (controlPersonaje.isGrounded)
         {
-            if (direccion == "Izquierda")
+            saltoDoble = false;
+            enElAire = false ;
+            dashActivo = false;    
+            coyoteActivo= true;
+            animacion.SetBool("Jumping", false);
+            animacion.SetBool("Running", false);
+            animacion.SetBool("Dash", false);
+            if (tiempoBufferSalto > 0)
             {
-                rotacionPersonaje = -180f;
-                this.transform.Rotate(Vector3.up, rotacionPersonaje);
-                direccion = "Derecha";
+                Salto();
             }
-            animacion.SetBool(name: "Running", value: true);
-            controlPersonaje.SimpleMove(movimiento);
-            return;
         }
-        if(hInput < 0)
+        else
         {
-            if (direccion == "Derecha")
+            if (coyoteActivo)
             {
-                rotacionPersonaje = 180f;
-                this.transform.Rotate(Vector3.up,rotacionPersonaje);
-                direccion = "Izquierda";
+                coyoteActivo = false;
+                tiempoCoyote = Time.time;
+                movimiento.y = 0;
             }
-            animacion.SetBool(name:"Running",value:true);
-            controlPersonaje.SimpleMove(movimiento);
-            return;
+            if  (tiempoCoyote + duracionCoyoteTime < Time.time)
+            {
+                enElAire = true;
+                if (saltoDoble && Input.GetButtonDown("Jump"))
+                {
+                    saltoDoble = false;
+                    movimiento.y = fuerzaSalto;
+                }
+                if(!saltoDoble && Input.GetButtonDown("Jump"))
+                {
+                    tiempoBufferSalto = duracionBufferSalto;
+                }
+                animacion.SetBool("Dash", false);
+                tiempoBufferSalto -= Time.deltaTime;
+                movimiento.y -= gravedad * Time.deltaTime;
+            } 
         }
 
-        animacion.SetBool("Running", false);
-        
+        if (hInput != 0)
+        {
+            rotacionPersonaje = Quaternion.LookRotation(new Vector3(hInput, 0, 0));
+            this.transform.rotation = rotacionPersonaje;
+            animacion.SetBool("Running", true);
+
+        }
+        if (Input.GetButtonDown("Jump") && !enElAire)
+        {
+            Salto();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftAlt) && !dashActivo)
+        {
+            StartCoroutine(Dash());
+        }
+        controlPersonaje.Move(movimiento * Time.deltaTime);
+    }
+    IEnumerator Dash()
+    {
+        float tiempoInicial = Time.time;
+        float direccion;
+        dashActivo = true;
+        if(rotacionPersonaje.y > 0)
+        {
+            direccion = 1f;
+        }
+        else
+        {
+            direccion = -1f;
+        }
+        while (Time.time < tiempoInicial + duracionDash)
+        {
+            animacion.SetBool("Dash", true);
+            movimiento.x = direccion*velocidadDash;
+            movimiento.y = 0;
+            controlPersonaje.Move(movimiento * Time.deltaTime);
+            yield return null;
+        }
+    }
+    void Salto()
+    {
+        enElAire = true;
+        saltoDoble = true;
+        coyoteActivo = false;
+        tiempoCoyote -= duracionCoyoteTime;
+        animacion.SetBool("Jumping", true);
+        movimiento.y = fuerzaSalto;
+        tiempoBufferSalto = 0f;
     }
 }

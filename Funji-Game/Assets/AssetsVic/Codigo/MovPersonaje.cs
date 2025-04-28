@@ -26,7 +26,7 @@ public class MovPersonaje : MonoBehaviour
     [Header("Coyote")]
     private bool coyoteActivo = true;
     private float tiempoCoyote = 0;
-    private float duracionCoyoteTime = 0.05f;
+    private float duracionCoyoteTime = 0.08f;
     [Header("Buffer")]
     private float tiempoBufferSalto = 0f;
     private float duracionBufferSalto = 0.1f;

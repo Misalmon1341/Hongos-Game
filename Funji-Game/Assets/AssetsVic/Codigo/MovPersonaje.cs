@@ -35,7 +35,7 @@ public class MovPersonaje : MonoBehaviour
     private Vector3 posicionRayCast;
     private float centradoRayCast = 0.5f;
     public LayerMask ParedLayerMask;
-    private float saltoParedLateral = 18f;
+    private float saltoParedLateral = 10f;
     private float separacionParedSalto = 2.5f;
 
     void Start()

@@ -8,10 +8,12 @@ public class PlataformaSuelta : MonoBehaviour
     private float esperParaDestruir = 2f;
     private float esperaParaReaparecer = 2f;
     private Rigidbody rb;
+    private Animator animacion;
     private Vector3 antiguaPosicion;
 
     void Start()
     {
+        animacion = this.GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody>();
         antiguaPosicion = this.gameObject.transform.position;
     }
@@ -36,6 +38,7 @@ public class PlataformaSuelta : MonoBehaviour
         this.gameObject.transform.position = antiguaPosicion;
         rb.useGravity = false;
         rb.velocity = new Vector3(0f, 0f, 0f);
+        animacion.SetBool("Reaparece", true);
     }
 
 

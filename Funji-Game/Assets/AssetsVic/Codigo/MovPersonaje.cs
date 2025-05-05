@@ -110,7 +110,7 @@ public class MovPersonaje : MonoBehaviour
         {
             Salto();
         }
-        if (Input.GetKeyDown(KeyCode.LeftAlt) && !dashActivo)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !dashActivo)
         {
             StartCoroutine(Dash());
         }

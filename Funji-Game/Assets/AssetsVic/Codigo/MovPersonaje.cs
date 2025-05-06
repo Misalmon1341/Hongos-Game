@@ -15,7 +15,7 @@ public class MovPersonaje : MonoBehaviour
     [Header("Gravedad")]
     private float gravedad = 9.8f;
     [Header("Salto")]
-    private float fuerzaSalto = 4f;
+    private float fuerzaSalto = 6f;
     private bool enElAire = false;
     [Header("SaltoDoble")]
     private bool saltoDoble = false;

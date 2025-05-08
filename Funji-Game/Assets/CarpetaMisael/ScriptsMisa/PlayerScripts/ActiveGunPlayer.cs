@@ -17,12 +17,8 @@ public class ActiveGunPlayer : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            bool wasTook = takeGuns.ActiveGuns(numeroArma);
-
-            if(wasTook)
-            {
-                Destroy(gameObject);
-            }
+            takeGuns.ActiveGuns(numeroArma);
+            Destroy(gameObject);
         }
     }
 }

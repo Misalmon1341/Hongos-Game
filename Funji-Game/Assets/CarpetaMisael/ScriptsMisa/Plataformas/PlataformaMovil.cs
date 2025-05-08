@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlataformaMovil : MonoBehaviour
 {
-    private float velocidadPlataforma = 1f;
+    private float velocidadPlataforma = 2f;
     void FixedUpdate()
     {
         this.transform.position += new Vector3(velocidadPlataforma * Time.deltaTime, 0, 0);

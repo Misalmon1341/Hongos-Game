@@ -26,4 +26,11 @@ public class TakeGuns : MonoBehaviour
         //cardUI.AddCard(numero);
         //return true;
     }
+    public void DesactivarArmas()
+    {
+        for (int i = 0; i < guns.Length; i++)
+        {
+            guns[i].SetActive(false);
+        }
+    }
 }

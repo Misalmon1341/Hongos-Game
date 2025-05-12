@@ -16,7 +16,8 @@ public class Shot : MonoBehaviour
     public MovPersonaje movPersonaje;
     private void Start()
     {
-         movPersonaje = GetComponent<MovPersonaje>();
+        if (movPersonaje == null)
+            movPersonaje = GetComponent<MovPersonaje>();
     }
 
     private void Update()
@@ -25,11 +26,21 @@ public class Shot : MonoBehaviour
         {
             if (Time.time > shotRateTime)
             {
-               GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-               newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
-               Destroy(newBullet, 2f);
-               shotRateTime = Time.time + shotRate;
+                Disparar();
+                shotRateTime = Time.time + shotRate;
             }
+        }
+    }
+
+    void Disparar()
+    {
+        GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+        newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+        Destroy(newBullet, 2f);
+
+        if (movPersonaje != null)
+        {
+            movPersonaje.Animator.SetTrigger("Shoot");
         }
     }
 }

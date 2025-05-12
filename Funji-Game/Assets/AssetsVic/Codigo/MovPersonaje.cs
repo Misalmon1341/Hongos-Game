@@ -7,6 +7,7 @@ public class MovPersonaje : MonoBehaviour
 {
     [Header("Personaje")]
     private Animator animacion;
+    public Animator Animator => animacion;
     public float velocidad = 1.5f;
     private float hInput;
     private Quaternion rotacionPersonaje;
@@ -40,7 +41,7 @@ public class MovPersonaje : MonoBehaviour
 
     void Start()
     {
-        animacion = this.GetComponent<Animator>();
+        animacion = GetComponent<Animator>();
         controlPersonaje = this.GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }

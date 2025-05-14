@@ -8,6 +8,9 @@ public class MovPersonaje : MonoBehaviour
     [Header("Personaje")]
     private Animator animacion;
     public Animator Animator => animacion;
+
+    [HideInInspector] public bool estaDisparando = false;
+
     public float velocidad = 1.5f;
     private float hInput;
     private Quaternion rotacionPersonaje;
@@ -45,11 +48,30 @@ public class MovPersonaje : MonoBehaviour
         controlPersonaje = this.GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }
+
     void Update()
     {
-        moverPersonaje();
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            animacion.SetTrigger("Shoot");
+            Debug.Log("Trigger disparar lanzado desde MovPersonaje");
+        }
 
+        if (!estaDisparando)
+        {
+            moverPersonaje();
+        }
+        else
+        {
+            movimiento.x = 0;
+            movimiento.y -= gravedad * Time.deltaTime;
+            animacion.SetBool("Running", false);
+            animacion.SetBool("Dash", false);
+            animacion.SetBool("Jumping", false);
+            controlPersonaje.Move(movimiento * Time.deltaTime);
+        }
     }
+
     void moverPersonaje()
     {
         hInput = Input.GetAxisRaw("Horizontal");
@@ -60,10 +82,10 @@ public class MovPersonaje : MonoBehaviour
         if (controlPersonaje.isGrounded)
         {
             saltoDoble = false;
-            enElAire = false ;
+            enElAire = false;
             dashActivo = false;
-            enLaPared = false ;
-            coyoteActivo= true;
+            enLaPared = false;
+            coyoteActivo = true;
             animacion.SetBool("Jumping", false);
             animacion.SetBool("Running", false);
             animacion.SetBool("Dash", false);
@@ -75,7 +97,7 @@ public class MovPersonaje : MonoBehaviour
         }
         else
         {
-             enElAire = true;
+            enElAire = true;
             ComprobarColisionPared();
             if (coyoteActivo)
             {
@@ -83,21 +105,21 @@ public class MovPersonaje : MonoBehaviour
                 tiempoCoyote = Time.time;
                 movimiento.y = 0;
             }
-            if  (tiempoCoyote + duracionCoyoteTime < Time.time)
+            if (tiempoCoyote + duracionCoyoteTime < Time.time)
             {
                 if (saltoDoble && Input.GetButtonDown("Jump"))
                 {
                     saltoDoble = false;
                     movimiento.y = fuerzaSalto;
                 }
-                if(!saltoDoble && Input.GetButtonDown("Jump"))
+                if (!saltoDoble && Input.GetButtonDown("Jump"))
                 {
                     tiempoBufferSalto = duracionBufferSalto;
                 }
                 animacion.SetBool("Dash", false);
                 tiempoBufferSalto -= Time.deltaTime;
                 movimiento.y -= gravedad * Time.deltaTime;
-            } 
+            }
         }
 
         if (hInput != 0)
@@ -117,11 +139,12 @@ public class MovPersonaje : MonoBehaviour
         }
         controlPersonaje.Move(movimiento * Time.deltaTime);
     }
+
     IEnumerator Dash()
     {
         float tiempoInicial = Time.time;
         dashActivo = true;
-       
+
         while (Time.time < tiempoInicial + duracionDash)
         {
             animacion.SetBool("Dash", true);
@@ -131,6 +154,7 @@ public class MovPersonaje : MonoBehaviour
             yield return null;
         }
     }
+
     void Salto()
     {
         ComprobarColisionPared();

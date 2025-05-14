@@ -4,43 +4,51 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
+    [Header("Referencias")]
+    public Transform spawnPoint;               // Hijo del arma (bien alineado al cañón)
+    public GameObject balaPrefab;
+    public MovPersonaje movPersonaje;          // Referencia al script que ya tiene el Animator
 
-    public GameObject bulletPrefab;
-    public Transform spawnPoint;
-    private int numeroGun;
+    [Header("Parámetros de disparo")]
+    public float velocidadBala = 10f;
+    public float delayDisparo = 0.2f;
 
-    public float shotForce = 1500;
-    public float shotRate = 0.5f;
+    private bool puedeDisparar = true;
 
-    private float shotRateTime = 0;
-    public MovPersonaje movPersonaje;
-    private void Start()
+    void Update()
     {
-        if (movPersonaje == null)
-            movPersonaje = GetComponent<MovPersonaje>();
+        if (Input.GetButtonDown("Fire1") && puedeDisparar)
+        {
+            StartCoroutine(DispararConDelay(delayDisparo));
+        }
     }
 
-    private void Update()
+    IEnumerator DispararConDelay(float delay)
     {
-        if (Input.GetButtonDown("Fire1"))
+        puedeDisparar = false;
+
+        // Activar la animación desde el Animator que tiene MovPersonaje
+        if (movPersonaje != null)
         {
-            if (Time.time > shotRateTime)
-            {
-                Disparar();
-                shotRateTime = Time.time + shotRate;
-            }
+            movPersonaje.Animator.SetTrigger("Disparar");
         }
+
+        yield return new WaitForSeconds(delay);
+
+        Disparar();
+
+        // Cooldown entre disparos
+        yield return new WaitForSeconds(0.3f);
+        puedeDisparar = true;
     }
 
     void Disparar()
     {
-        GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-        newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
-        Destroy(newBullet, 2f);
+        GameObject bala = Instantiate(balaPrefab, spawnPoint.position, Quaternion.identity);
 
-        if (movPersonaje != null)
-        {
-            movPersonaje.Animator.SetTrigger("Shoot");
-        }
+        // Dirección solo en X (izquierda o derecha según escala)
+        Vector3 direccionDisparo = transform.localScale.x > 0 ? Vector3.right : Vector3.left;
+        bala.GetComponent<Rigidbody>().velocity = direccionDisparo * velocidadBala;
     }
 }
+

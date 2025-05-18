@@ -57,6 +57,7 @@ public class MovPersonaje : MonoBehaviour
             Debug.Log("Trigger disparar lanzado desde MovPersonaje");
         }
 
+
         if (!estaDisparando)
         {
             moverPersonaje();
@@ -155,7 +156,7 @@ public class MovPersonaje : MonoBehaviour
         }
     }
 
-    void Salto()
+    public void Salto()
     {
         ComprobarColisionPared();
         enElAire = true;

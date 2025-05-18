@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - bala
+  - Ground
+  - Bomb
   layers:
   - Default
   - TransparentFX

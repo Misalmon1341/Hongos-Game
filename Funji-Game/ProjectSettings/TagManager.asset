@@ -7,6 +7,8 @@ TagManager:
   - bala
   - Ground
   - Bomb
+  - FxTemporaire
+  - DestructibleWall
   layers:
   - Default
   - TransparentFX

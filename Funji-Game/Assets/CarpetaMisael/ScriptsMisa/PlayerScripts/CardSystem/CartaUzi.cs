@@ -2,20 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CartaUzi : CartaBase
+public class CartaUzi : MonoBehaviour
 {
     public GameObject bombaPrefab;
+    public Transform spawnPointBomba;
+    public float fuerzaLanzamiento = 15f;
+    public TakeGuns takeGuns;
+    public int indexCarta; // el número de esta carta para TakeGuns
 
-    protected override void EjecutarDisparo()
+    private void Update()
     {
-        shot.Disparar(); 
+        if (Input.GetButtonDown("Fire2")) // Clic derecho
+        {
+            UsarHabilidad();
+        }
     }
 
-    public override void UsarHabilidad()
+    void UsarHabilidad()
     {
-        GameObject bomba = Instantiate(bombaPrefab, shot.spawnPoint.position, Quaternion.identity);
-        bomba.GetComponent<Rigidbody>().velocity = transform.forward * 10f;
-        durabilidad = 0;
-        gameObject.SetActive(false);
+        GameObject bomba = Instantiate(bombaPrefab, spawnPointBomba.position, Quaternion.identity);
+        Rigidbody rb = bomba.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * fuerzaLanzamiento, ForceMode.VelocityChange);
+
+        takeGuns.DesactivarArmas();
     }
 }

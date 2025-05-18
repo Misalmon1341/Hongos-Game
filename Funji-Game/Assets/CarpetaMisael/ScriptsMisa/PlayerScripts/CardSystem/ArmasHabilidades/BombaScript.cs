@@ -4,28 +4,38 @@ using UnityEngine;
 
 public class BombaScript : MonoBehaviour
 {
-    public float radioExplosion = 2.5f; 
-    public LayerMask Enemigo;
+    public float radioExplosion = 5f;
+    public int daño = 999; // Daño letal
     public GameObject efectoExplosion;
+    public LayerMask capaEnemigos;
 
     private void OnCollisionEnter(Collision collision)
     {
-        Explota();
+        Explotar();
     }
 
-    void Explota()
+    void Explotar()
     {
-        
-        if (efectoExplosion)
-            Instantiate(efectoExplosion, transform.position, Quaternion.identity);
-
-        
-        Collider[] enemigos = Physics.OverlapSphere(transform.position, radioExplosion, Enemigo);
-        foreach (Collider enemigo in enemigos)
+        // Efecto visual
+        if (efectoExplosion != null)
         {
-            Destroy(enemigo.gameObject);
+            GameObject efecto = Instantiate(efectoExplosion, transform.position, Quaternion.identity);
+            efecto.GetComponent<ParticleSystem>().Play();
+            Destroy(efecto, 2f);
         }
 
-        Destroy(gameObject); 
+        // Buscar todos los colliders dentro del área de la explosión
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radioExplosion, capaEnemigos);
+
+        foreach (Collider nearbyObject in colliders)
+        {
+            if (nearbyObject.TryGetComponent<IDamageable>(out var damageable))
+            {
+                damageable.TakeDamage(daño);
+            }
+        }
+
+        // Destruir la bomba tras explotar
+        Destroy(gameObject);
     }
 }

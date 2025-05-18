@@ -2,27 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class VidaEnemigo : MonoBehaviour
+public class VidaEnemigo : MonoBehaviour, IDamageable
 {
-    public int vidaEnemigo;
+    public int vidaEnemigo = 10;
     public Slider BarraVidaEnemigo;
-    public int damage;
+
     private void Update()
     {
-        BarraVidaEnemigo.value = vidaEnemigo;
+        if (BarraVidaEnemigo != null)
+            BarraVidaEnemigo.value = vidaEnemigo;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void TakeDamage(int amount)
     {
-       if (other.gameObject.CompareTag("bala"))
-       {
-            vidaEnemigo -=damage;
-            Destroy(other.gameObject);
-            if (vidaEnemigo < 0)
-            {
-               Destroy(gameObject);
-            }
-       }
-        
+        vidaEnemigo -= amount;
+        if (vidaEnemigo <= 0)
+        {
+            Morir();
+        }
+    }
+
+    private void Morir()
+    {
+        Destroy(gameObject);
     }
 }

@@ -8,7 +8,7 @@ public class CartaPistolaRafagas : CartaBase
     public GameObject balaPrefab;
     public Transform spawnPoint;
 
-    protected override void EjecutarDisparo()
+    public override void EjecutarDisparo()
     {
         for (int i = 0; i < 3; i++)
         {

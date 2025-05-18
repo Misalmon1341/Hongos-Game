@@ -8,7 +8,7 @@ public class CartaEscopeta : CartaBase
     public Transform spawnPoint;
     public float spread = 5f;
 
-    protected override void EjecutarDisparo()
+    public override void EjecutarDisparo()
     {
         for (int i = 0; i < 5; i++)
         {

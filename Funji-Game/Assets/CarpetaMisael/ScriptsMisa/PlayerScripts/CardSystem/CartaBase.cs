@@ -37,6 +37,6 @@ public abstract class CartaBase : MonoBehaviour
         puedeDisparar = true;
     }
 
-    protected abstract void EjecutarDisparo();
-    public abstract void UsarHabilidad(); 
+    public virtual void EjecutarDisparo(){ }
+    public virtual void UsarHabilidad(){ }
 }

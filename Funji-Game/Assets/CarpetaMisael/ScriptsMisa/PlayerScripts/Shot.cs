@@ -19,7 +19,7 @@ public class Shot : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && puedeDisparar)
         {
             CartaBase carta = GetComponent<CartaBase>();
-            if (carta != null) carta.Usar();
+            if (carta != null) carta.EjecutarDisparo();
         }
 
         if (Input.GetButtonDown("Fire2"))
@@ -52,7 +52,8 @@ public class Shot : MonoBehaviour
     public void Disparar()
     {
         GameObject bala = Instantiate(balaPrefab, spawnPoint.position, Quaternion.identity);
-        Vector3 direccionDisparo = transform.forward;
+        float direccionX = Mathf.Sign(transform.forward.x);
+        Vector3 direccionDisparo = new Vector3(direccionX, 0f, 0f);
         bala.GetComponent<Rigidbody>().velocity = direccionDisparo * velocidadBala;
     }
 }

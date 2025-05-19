@@ -17,4 +17,12 @@ public class Navegacion : MonoBehaviour
     {
         SceneManager.LoadScene("Creditos");
     }
+    public void RegresarMenu()
+    {
+        SceneManager.LoadScene("MenuPrincipal");
+    }
+    public void Sonido()
+    {
+        SceneManager.LoadScene("Sonido");
+    }
 }

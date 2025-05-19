@@ -8,6 +8,7 @@ public abstract class CartaBase : MonoBehaviour
     public float cooldownDisparo;
     protected bool puedeDisparar = true;
     protected Shot shot;
+    protected TakeGuns takeGuns;
 
     protected virtual void Start()
     {

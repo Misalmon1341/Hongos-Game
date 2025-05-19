@@ -7,23 +7,17 @@ public class VidaEnemigo : MonoBehaviour, IDamageable
     public int vidaEnemigo = 10;
     public Slider BarraVidaEnemigo;
 
-    private void Update()
-    {
-        if (BarraVidaEnemigo != null)
-            BarraVidaEnemigo.value = vidaEnemigo;
-    }
-
     public void TakeDamage(int amount)
     {
         vidaEnemigo -= amount;
         if (vidaEnemigo <= 0)
         {
-            Morir();
+            Destroy(gameObject);
         }
     }
 
-    private void Morir()
+    private void Update()
     {
-        Destroy(gameObject);
+        BarraVidaEnemigo.value = vidaEnemigo;
     }
 }

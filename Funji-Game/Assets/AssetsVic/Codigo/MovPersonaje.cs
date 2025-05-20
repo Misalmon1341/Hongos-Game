@@ -160,7 +160,6 @@ public class MovPersonaje : MonoBehaviour
     {
         ComprobarColisionPared();
         enElAire = true;
-        saltoDoble = true;
         coyoteActivo = false;
         if (enLaPared)
         {
@@ -174,6 +173,10 @@ public class MovPersonaje : MonoBehaviour
         animacion.SetBool("Jumping", true);
         movimiento.y = fuerzaSalto;
         tiempoBufferSalto = 0f;
+    }
+    public void ActivarSaltoDoble()
+    {
+        saltoDoble = true;
     }
     void ComprobarColisionPared()
     {

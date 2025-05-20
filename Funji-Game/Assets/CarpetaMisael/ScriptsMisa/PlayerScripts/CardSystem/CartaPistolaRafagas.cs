@@ -10,6 +10,7 @@ public class CartaPistolaRafagas : CartaBase
     public Transform spawnPoint;
     public float velocidadBala = 12f;
     public float intervaloEntreBalas = 0.1f;
+    [SerializeField] protected new TakeGuns takeGuns;
 
     private bool disparando = false;
 
@@ -47,7 +48,8 @@ public class CartaPistolaRafagas : CartaBase
 
         if (!mov.GetComponent<CharacterController>().isGrounded)
         {
-            mov.Salto(); // Reutiliza tu función de salto ya implementada
+            mov.ActivarSaltoDoble(); // Habilita el doble salto solo por esta habilidad
+            mov.Salto();
             durabilidad = 0;
             takeGuns.DesactivarArmas();
         }

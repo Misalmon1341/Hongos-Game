@@ -9,14 +9,12 @@ public class CartaUzi : CartaBase
     public Transform spawnPoint;
     public float velocidadBala = 10f;
     public float cooldown = 0.3f;
-  
+    [SerializeField] protected new TakeGuns takeGuns;
 
     [Header("Habilidad - Bomba")]
     public GameObject bombaPrefab;
     public Transform spawnPointBomba;
     public float fuerzaLanzamiento = 15f;
-    public TakeGuns takeGuns;
-    public int indexCarta;
 
     void Awake()
     {

@@ -6,7 +6,7 @@ using UnityEngine;
 public class MovPersonaje : MonoBehaviour
 {
     [Header("Personaje")]
-    private Animator animacion;
+    public Animator animacion;
     public Animator Animator => animacion;
 
     [HideInInspector] public bool estaDisparando = false;

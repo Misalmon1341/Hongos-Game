@@ -16,6 +16,7 @@ public class CartaPistolaRafagas : CartaBase
 
     public override void EjecutarDisparo()
     {
+        Debug.Log("Se esta ehecutando disparo");
         if (!disparando)
             StartCoroutine(DispararRafaga());
     }
@@ -48,7 +49,7 @@ public class CartaPistolaRafagas : CartaBase
 
         if (!mov.GetComponent<CharacterController>().isGrounded)
         {
-            mov.ActivarSaltoDoble(); // Habilita el doble salto solo por esta habilidad
+            mov.ActivarSaltoDoble(); 
             mov.Salto();
             durabilidad = 0;
             takeGuns.DesactivarArmas();

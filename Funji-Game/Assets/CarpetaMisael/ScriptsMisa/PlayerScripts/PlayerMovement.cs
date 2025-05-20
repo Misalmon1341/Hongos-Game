@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         Salto();
         BufferManager();
     }
-    private void MovimientoLateral() //Multiplica el valor de input para acceder a la velocity y hace girar al personaje
+    private void MovimientoLateral() 
     {
         float moveInput = Input.GetAxis("Horizontal");
         rB.velocity = new Vector3(moveInput * rapidezMovimiento, rB.velocity.y, 0);
@@ -66,10 +66,10 @@ public class PlayerMovement : MonoBehaviour
                 yaSalto = false;
                 rB.velocity = new Vector3(rB.velocity.x, 1 * jumpf, 0);
             }
-            else if (bufferTimeCounter > 0 && contadorDobleSalto > 0 && dobleSaltoActivo) // Realizar el doble salto
+            else if (bufferTimeCounter > 0 && contadorDobleSalto > 0 && dobleSaltoActivo) 
             {
                 rB.velocity = new Vector3(rB.velocity.x, 1 * jumpf, 0);
-                contadorDobleSalto--; // Disminuir el contador solo al realizar el doble salto
+                contadorDobleSalto--; 
             }
 
 

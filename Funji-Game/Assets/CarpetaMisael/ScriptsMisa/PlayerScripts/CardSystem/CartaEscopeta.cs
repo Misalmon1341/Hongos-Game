@@ -14,9 +14,8 @@ public class CartaEscopeta : CartaBase
         for (int i = 0; i < 5; i++)
         {
             Vector3 direccion = spawnPoint.forward;
-         
-            direccion.x += Random.Range(-dispersion, dispersion) * 0.01f;
-            direccion.y += Random.Range(-dispersion, dispersion) * 0.01f;
+
+            direccion.y += Random.Range(-dispersion, dispersion) * 0.05f;
 
             GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position, Quaternion.LookRotation(direccion));
             perdigon.GetComponent<Rigidbody>().velocity = direccion.normalized * fuerzaDisparo;
@@ -26,7 +25,7 @@ public class CartaEscopeta : CartaBase
     public override void UsarHabilidad()
     {
         Ray ray = new Ray(spawnPoint.position, spawnPoint.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, 20f)) // Rango del rayo
+        if (Physics.Raycast(ray, out RaycastHit hit, 20f)) 
         {
             if (hit.collider.CompareTag("DestructibleWall"))
             {

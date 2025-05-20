@@ -7,7 +7,8 @@ public class Shot : MonoBehaviour
     [Header("Referencias")]
     public Transform spawnPoint;               
     public GameObject balaPrefab;
-    public MovPersonaje movPersonaje;          
+    public MovPersonaje movPersonaje; 
+    
     [Header("Parámetros de disparo")]
     public float velocidadBala = 10f;
     public float delayDisparo = 0.2f;
@@ -19,7 +20,9 @@ public class Shot : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && puedeDisparar)
         {
             CartaBase carta = GetComponent<CartaBase>();
-            if (carta != null) carta.EjecutarDisparo();
+            if (carta != null) carta.Usar();
+            
+            
         }
 
         if (Input.GetButtonDown("Fire2"))
@@ -33,14 +36,15 @@ public class Shot : MonoBehaviour
     {
         puedeDisparar = false;
 
-        
+        Debug.Log("Esta ebtrando");
       
 
         yield return new WaitForSeconds(delay);
       
         if (movPersonaje != null)
         {
-            movPersonaje.Animator.SetTrigger("Shoot");
+            movPersonaje.animacion.SetTrigger("Shoot");
+            Debug.Log("Trigger llamado desde shot");
         }
         Disparar();
 

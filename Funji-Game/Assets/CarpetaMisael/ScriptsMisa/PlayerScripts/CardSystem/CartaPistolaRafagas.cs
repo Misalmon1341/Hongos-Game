@@ -14,11 +14,20 @@ public class CartaPistolaRafagas : CartaBase
 
     private bool disparando = false;
 
-    public override void EjecutarDisparo()
+    public override void Usar()
     {
-        Debug.Log("Se esta ehecutando disparo");
-        if (!disparando)
-            StartCoroutine(DispararRafaga());
+        if (durabilidad <= 0) return;
+
+        if (shot != null)
+        {
+            StartCoroutine(shot.DispararConDelay(0.5f));
+            durabilidad--;
+        }
+
+        if (durabilidad <= 0)
+        {
+            takeGuns.DesactivarArmas();
+        }
     }
 
     IEnumerator DispararRafaga()

@@ -38,14 +38,14 @@ public class Shot : MonoBehaviour
 
         Debug.Log("Esta ebtrando");
       
-
-        yield return new WaitForSeconds(delay);
-      
         if (movPersonaje != null)
         {
             movPersonaje.animacion.SetTrigger("Shoot");
             Debug.Log("Trigger llamado desde shot");
         }
+
+        yield return new WaitForSeconds(delay);
+      
         Disparar();
 
       

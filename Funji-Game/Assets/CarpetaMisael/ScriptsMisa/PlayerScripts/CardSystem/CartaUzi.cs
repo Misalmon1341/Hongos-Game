@@ -16,21 +16,22 @@ public class CartaUzi : CartaBase
     public Transform spawnPointBomba;
     public float fuerzaLanzamiento = 15f;
 
+    private new Shot shot;
     void Awake()
     {
         durabilidad = 30;
+        shot = GetComponent<Shot>();
     }
     private float tiempoUltimoDisparo;
-    public override void EjecutarDisparo()
+    public override void Usar()
     {
-        if (Time.time - tiempoUltimoDisparo < cooldown || durabilidad <= 0) return;
+        if (durabilidad <= 0) return;
 
-        GameObject bala = Instantiate(balaPrefab, spawnPoint.position, Quaternion.identity);
-        Rigidbody rb = bala.GetComponent<Rigidbody>();
-        rb.velocity = transform.forward * velocidadBala;
-
-        durabilidad--;
-        tiempoUltimoDisparo = Time.time;
+        if (shot != null)
+        {
+            StartCoroutine(shot.DispararConDelay(0.3f));
+            durabilidad--;
+        }
 
         if (durabilidad <= 0)
         {
@@ -39,10 +40,18 @@ public class CartaUzi : CartaBase
     }
     public override void UsarHabilidad()
     {
-        GameObject bomba = Instantiate(bombaPrefab, spawnPointBomba.position, Quaternion.identity);
-        Rigidbody rb = bomba.GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * fuerzaLanzamiento, ForceMode.VelocityChange);
+        if (durabilidad <= 0) return;
 
+        // Instanciar bomba
+        Instantiate(bombaPrefab, spawnPoint.position, Quaternion.identity);
+
+        // Reproduce animación
+        if (shot != null)
+        {
+            StartCoroutine(shot.DispararConDelay(0.3f));
+        }
+
+        durabilidad = 0;
         takeGuns.DesactivarArmas();
     }
 }

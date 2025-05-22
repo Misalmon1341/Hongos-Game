@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaSimple : MonoBehaviour
 {
-    public int damage = 20; 
+    public int damage = 30; 
 
     private void OnTriggerEnter(Collider other)
     {

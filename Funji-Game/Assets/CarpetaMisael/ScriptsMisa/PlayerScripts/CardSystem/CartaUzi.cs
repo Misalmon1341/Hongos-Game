@@ -9,7 +9,7 @@ public class CartaUzi : CartaBase
     public Transform spawnPoint;
     public float velocidadBala = 10f;
     public float cooldown = 0.3f;
-    [SerializeField] protected new TakeGuns takeGuns;
+    
 
     [Header("Habilidad - Bomba")]
     public GameObject bombaPrefab;
@@ -21,6 +21,7 @@ public class CartaUzi : CartaBase
     {
         durabilidad = 30;
         shot = GetComponent<Shot>();
+        takeGuns = GetComponent<TakeGuns>();
     }
     private float tiempoUltimoDisparo;
     public override void Usar()
@@ -42,8 +43,15 @@ public class CartaUzi : CartaBase
     {
         if (durabilidad <= 0) return;
 
-        // Instanciar bomba
-        Instantiate(bombaPrefab, spawnPoint.position, Quaternion.identity);
+        // Instanciar y lanzar la bomba
+        GameObject bomba = Instantiate(bombaPrefab, spawnPointBomba.position, Quaternion.identity);
+
+        Rigidbody rb = bomba.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            Vector3 direccion = transform.forward;
+            rb.velocity = direccion * fuerzaLanzamiento;
+        }
 
         // Reproduce animación
         if (shot != null)

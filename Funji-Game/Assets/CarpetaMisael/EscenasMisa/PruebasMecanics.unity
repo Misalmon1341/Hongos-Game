@@ -6664,11 +6664,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   durabilidad: 30
   cooldownDisparo: 0.3
+  takeGuns: {fileID: 0}
   balaPrefab: {fileID: 4404184702850109129, guid: eae848828de5edf4eb2df85908194f26, type: 3}
   spawnPoint: {fileID: 1070292346}
   velocidadBala: 15.12
   cooldown: 0.3
-  takeGuns: {fileID: 241297178}
   bombaPrefab: {fileID: 4907431108567150316, guid: 79a84c268a2cb9e4681ef1c1c4f8e381, type: 3}
   spawnPointBomba: {fileID: 1070292346}
   fuerzaLanzamiento: 15
@@ -16606,6 +16606,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaEnemigo: 100
   BarraVidaEnemigo: {fileID: 1043662362}
+  animator: {fileID: 0}
+  target: {fileID: 0}
+--- !u!95 &1175688048
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175688044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a18d86929a5a5ca41bffdfbdd1e672bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1179108804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7648502956408741331, guid: 244efe9879c23d64ba33a6f38734ac84, type: 3}
@@ -17179,11 +17202,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   durabilidad: 30
   cooldownDisparo: 1
+  takeGuns: {fileID: 0}
   balaPrefab: {fileID: 4404184702850109129, guid: eae848828de5edf4eb2df85908194f26, type: 3}
   spawnPoint: {fileID: 445778828}
   velocidadBala: 12
   intervaloEntreBalas: 0.1
-  takeGuns: {fileID: 241297178}
 --- !u!114 &1243626259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18248,6 +18271,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1175688047}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1175688048}
   m_SourcePrefab: {fileID: 100100000, guid: 263b90a42db487a44905fc5018cd408a, type: 3}
 --- !u!1 &1354579780 stripped
 GameObject:
@@ -23865,11 +23891,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   durabilidad: 6
   cooldownDisparo: 1
+  takeGuns: {fileID: 0}
   perdigonPrefab: {fileID: 5520916783329546538, guid: f4089fd95b062f14c955e70000045cac, type: 3}
   spawnPoint: {fileID: 360333327}
   dispersion: 8
   fuerzaDisparo: 10
-  takeGuns: {fileID: 241297178}
 --- !u!114 &1798201291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27068,6 +27094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaEnemigo: 130
   BarraVidaEnemigo: {fileID: 926494312}
+  animator: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &2113510252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2505271470697925691, guid: 244efe9879c23d64ba33a6f38734ac84, type: 3}

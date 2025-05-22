@@ -8,7 +8,6 @@ public class CartaEscopeta : CartaBase
     public Transform spawnPoint;
     public float dispersion = 8f;
     public float fuerzaDisparo = 10f;
-    [SerializeField] protected new TakeGuns takeGuns;
     private LineRenderer lineRenderer;
     private void Awake()
     {
@@ -22,7 +21,7 @@ public class CartaEscopeta : CartaBase
 
         if (shot != null)
         {
-            StartCoroutine(shot.DispararConDelay(0.1f));
+            StartCoroutine(shot.DispararConDelay(0.3f));
             durabilidad--;
         }
 

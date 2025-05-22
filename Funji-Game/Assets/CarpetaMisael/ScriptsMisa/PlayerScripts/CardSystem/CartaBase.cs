@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class CartaBase : MonoBehaviour
@@ -8,8 +9,8 @@ public abstract class CartaBase : MonoBehaviour
     public float cooldownDisparo;
     protected bool puedeDisparar = true;
     protected Shot shot;
-    protected TakeGuns takeGuns;
-
+    [SerializeField] protected TakeGuns takeGuns;
+    public int Durabilidad => durabilidad;
     protected virtual void Start()
     {
         shot = GetComponent<Shot>();
@@ -17,9 +18,15 @@ public abstract class CartaBase : MonoBehaviour
 
     public virtual void Usar()
     {
-        if (puedeDisparar && durabilidad > 0)
+        if (durabilidad <= 0) return;
+
+        // Resto del disparo...
+        StartCoroutine(shot.DispararConDelay(0.3f));
+        durabilidad--;
+
+        if (durabilidad <= 0)
         {
-            StartCoroutine(Disparar());
+            takeGuns.DesactivarArmas();
         }
     }
 

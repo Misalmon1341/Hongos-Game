@@ -10,17 +10,20 @@ public class CartaPistolaRafagas : CartaBase
     public Transform spawnPoint;
     public float velocidadBala = 12f;
     public float intervaloEntreBalas = 0.1f;
-    [SerializeField] protected new TakeGuns takeGuns;
 
     private bool disparando = false;
 
+    private void Awake()
+    {
+        takeGuns = GetComponent<TakeGuns>(); 
+    }
     public override void Usar()
     {
         if (durabilidad <= 0) return;
 
         if (shot != null)
         {
-            StartCoroutine(shot.DispararConDelay(0.5f));
+            StartCoroutine(shot.DispararConDelay(0.3f));
             durabilidad--;
         }
 

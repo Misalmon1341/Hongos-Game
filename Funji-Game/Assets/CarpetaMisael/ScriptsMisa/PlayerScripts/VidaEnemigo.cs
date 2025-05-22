@@ -7,8 +7,15 @@ public class VidaEnemigo : MonoBehaviour, IDamageable
 {
     public int vidaEnemigo = 10;
     public Slider BarraVidaEnemigo;
-    public Animator animator;
+    private Animator animator;
     public GameObject target;
+
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+     
+    }
     public void TakeDamage(int amount)
     {
         vidaEnemigo -= amount;

@@ -65,9 +65,9 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0
-        functionName: atacar
+        functionName: NewEvent
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11500000, guid: 6c81c9b84f6d36e4db95d8781741fd61, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

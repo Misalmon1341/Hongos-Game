@@ -25,4 +25,8 @@ public class Navegacion : MonoBehaviour
     {
         SceneManager.LoadScene("Sonido");
     }
+    public void Controles()
+    {
+        SceneManager.LoadScene("Controles");
+    }
 }

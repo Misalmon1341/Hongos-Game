@@ -4,71 +4,75 @@ using UnityEngine;
 
 public class CartaEscopeta : CartaBase
 {
+
+    [Header("Disparo")]
     public GameObject perdigonPrefab;
     public Transform spawnPoint;
-    public float dispersion = 8f;
-    public float fuerzaDisparo = 10f;
-    private LineRenderer lineRenderer;
-    private void Awake()
-    {
-        lineRenderer = GetComponent<LineRenderer>();
-        shot = GetComponent<Shot>();
-        takeGuns = GetComponent<TakeGuns>();
-    }
+    public float velocidadPerdigon = 10f;
+    public int cantidadPerdigones = 5;
+    public float anguloDispersión = 50f;
+
+    [Header("Láser")]
+    public LineRenderer laserRenderer;
+    public float laserDuracion = 0.1f;
+    public float alcance = 10f;
+    public LayerMask layerDestructible;
+
     public override void Usar()
     {
         if (durabilidad <= 0) return;
 
-        if (shot != null)
+        DisparoHelper.EjecutarAnimacionDisparo(anim);
+
+        float inicioAngulo = -anguloDispersión / 2f;
+        float incremento = anguloDispersión / (cantidadPerdigones - 1);
+
+        for (int i = 0; i < cantidadPerdigones; i++)
         {
-            StartCoroutine(shot.DispararConDelay(0.3f));
-            durabilidad--;
+            float angulo = inicioAngulo + (incremento * i);
+            Quaternion rotacion = Quaternion.Euler(0, angulo, 0);
+            Vector3 direccion = rotacion * spawnPoint.right;
+
+            GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position, Quaternion.identity);
+            perdigon.GetComponent<Rigidbody>().velocity = direccion * velocidadPerdigon;
         }
 
+        durabilidad--;
         if (durabilidad <= 0)
-        {
             takeGuns.DesactivarArmas();
-        }
     }
 
     public override void UsarHabilidad()
     {
-        if (spawnPoint == null || takeGuns == null || lineRenderer == null) return;
+        if (durabilidad <= 0) return;
 
-        RaycastHit hit;
-        Vector3 endPoint = spawnPoint.position + spawnPoint.forward * 20f;
+        DisparoHelper.EjecutarAnimacionDisparo(anim);
 
-        if (Physics.Raycast(spawnPoint.position, spawnPoint.forward, out hit, 20f))
+        Vector3 origen = spawnPoint.position;
+        Vector3 direccion = spawnPoint.right;
+
+        if (Physics.Raycast(origen, direccion, out RaycastHit hit, alcance, layerDestructible))
         {
-            endPoint = hit.point;
-
-            if (hit.collider.CompareTag("DestructibleWall"))
-            {
-                Destroy(hit.collider.gameObject);
-            }
+            Destroy(hit.collider.gameObject);
         }
 
-        StartCoroutine(MostrarLaser(spawnPoint.position, endPoint));
-
-        if (shot != null)
+        if (laserRenderer != null)
         {
-            StartCoroutine(shot.DispararConDelay(0.05f));
+            laserRenderer.SetPosition(0, origen);
+            laserRenderer.SetPosition(1, origen + direccion * alcance);
+            laserRenderer.enabled = true;
+            Invoke(nameof(DesactivarLaser), laserDuracion);
         }
 
         durabilidad = 0;
         takeGuns.DesactivarArmas();
     }
-    private IEnumerator MostrarLaser(Vector3 inicio, Vector3 fin)
+
+    void DesactivarLaser()
     {
-        if (lineRenderer == null) yield break;
-
-        lineRenderer.positionCount = 2;
-        lineRenderer.SetPosition(0, inicio);
-        lineRenderer.SetPosition(1, fin);
-        lineRenderer.enabled = true;
-
-        yield return new WaitForSeconds(0.2f); // Tiempo visible
-
-        lineRenderer.enabled = false;
+        if (laserRenderer != null)
+        {
+            laserRenderer.enabled = false;
+        }
     }
 }

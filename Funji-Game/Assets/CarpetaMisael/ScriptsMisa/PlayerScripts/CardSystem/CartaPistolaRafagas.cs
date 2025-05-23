@@ -5,66 +5,52 @@ using UnityEngine;
 
 public class CartaPistolaRafagas : CartaBase
 {
-
+    [Header("Disparo Ráfaga")]
     public GameObject balaPrefab;
     public Transform spawnPoint;
-    public float velocidadBala = 12f;
-    public float intervaloEntreBalas = 0.1f;
+    public float velocidadBala = 10f;
+    public float cooldown = 1f;
 
-    private bool disparando = false;
+    [Header("Jugador")]
+    public MovPersonaje jugador; // Asigna este en el Inspector
 
-    private void Awake()
+    private float tiempoUltimoDisparo;
+
+    void Awake()
     {
-        takeGuns = GetComponent<TakeGuns>(); 
+        durabilidad = 10;
+        takeGuns = GetComponent<TakeGuns>();
     }
+
     public override void Usar()
     {
-        if (durabilidad <= 0) return;
+        if (durabilidad <= 0 || Time.time < tiempoUltimoDisparo + cooldown) return;
 
-        if (shot != null)
-        {
-            StartCoroutine(shot.DispararConDelay(0.3f));
-            durabilidad--;
-        }
+        tiempoUltimoDisparo = Time.time;
+        jugador.animacion.SetTrigger("Shoot");
+        jugador.estaDisparando = true;
 
-        if (durabilidad <= 0)
-        {
-            takeGuns.DesactivarArmas();
-        }
-    }
-
-    IEnumerator DispararRafaga()
-    {
-        disparando = true;
-
+        // Dispara 3 balas en ráfaga
         for (int i = 0; i < 3; i++)
         {
             GameObject bala = Instantiate(balaPrefab, spawnPoint.position, Quaternion.identity);
-            bala.GetComponent<Rigidbody>().velocity = transform.forward * velocidadBala;
-            yield return new WaitForSeconds(intervaloEntreBalas);
+            Rigidbody rb = bala.GetComponent<Rigidbody>();
+            rb.velocity = new Vector3(jugador.transform.forward.x, 0, 0) * velocidadBala;
         }
 
         durabilidad--;
-
-        if (durabilidad <= 0)
-        {
-            takeGuns.DesactivarArmas();
-        }
-
-        yield return new WaitForSeconds(cooldownDisparo);
-        disparando = false;
+        if (durabilidad <= 0) takeGuns.DesactivarArmas();
     }
 
     public override void UsarHabilidad()
     {
-        MovPersonaje mov = GetComponentInParent<MovPersonaje>();
+        if (durabilidad <= 0) return;
 
-        if (!mov.GetComponent<CharacterController>().isGrounded)
-        {
-            mov.ActivarSaltoDoble(); 
-            mov.Salto();
-            durabilidad = 0;
-            takeGuns.DesactivarArmas();
-        }
+        jugador.ActivarSaltoDoble();
+        jugador.animacion.SetTrigger("Shoot");
+        jugador.estaDisparando = true;
+
+        durabilidad = 0;
+        takeGuns.DesactivarArmas();
     }
 }

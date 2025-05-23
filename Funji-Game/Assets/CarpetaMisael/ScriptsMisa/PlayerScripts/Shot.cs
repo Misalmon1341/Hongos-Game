@@ -20,10 +20,10 @@ public class Shot : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && puedeDisparar)
         {
             CartaBase carta = GetComponent<CartaBase>();
-            if (carta != null && carta.Durabilidad > 0) // <- Añade esta condición
+            /*if (carta != null && carta.Durabilidad > 0) // <- Añade esta condición
             {
                 carta.Usar();
-            }
+            }*/
 
 
         }
@@ -31,10 +31,10 @@ public class Shot : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             CartaBase carta = GetComponent<CartaBase>();
-            if (carta != null && carta.Durabilidad > 0) // <- Igual aquí
+            /*if (carta != null && carta.Durabilidad > 0) // <- Igual aquí
             {
                 carta.UsarHabilidad();
-            }
+            }*/
         }
     }
 

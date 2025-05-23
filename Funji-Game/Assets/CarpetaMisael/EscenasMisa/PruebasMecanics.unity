@@ -6765,15 +6765,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durabilidad: 30
-  cooldownDisparo: 0.3
   takeGuns: {fileID: 0}
+  anim: {fileID: 0}
   balaPrefab: {fileID: 4404184702850109129, guid: eae848828de5edf4eb2df85908194f26, type: 3}
   spawnPoint: {fileID: 1070292346}
   velocidadBala: 15.12
-  cooldown: 0.3
   bombaPrefab: {fileID: 4907431108567150316, guid: 79a84c268a2cb9e4681ef1c1c4f8e381, type: 3}
-  spawnPointBomba: {fileID: 1070292346}
-  fuerzaLanzamiento: 15
+  fuerzaBomba: 15
 --- !u!114 &247607664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6857,7 +6855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0db986b88ee29b448a87e3d240f01c80, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18220,12 +18218,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durabilidad: 30
-  cooldownDisparo: 1
   takeGuns: {fileID: 0}
+  anim: {fileID: 0}
   balaPrefab: {fileID: 4404184702850109129, guid: eae848828de5edf4eb2df85908194f26, type: 3}
   spawnPoint: {fileID: 445778828}
   velocidadBala: 12
-  intervaloEntreBalas: 0.1
+  cooldown: 1
+  jugador: {fileID: 0}
 --- !u!114 &1243626259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25053,12 +25052,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durabilidad: 6
-  cooldownDisparo: 1
   takeGuns: {fileID: 0}
+  anim: {fileID: 0}
   perdigonPrefab: {fileID: 5520916783329546538, guid: f4089fd95b062f14c955e70000045cac, type: 3}
   spawnPoint: {fileID: 360333327}
-  dispersion: 8
-  fuerzaDisparo: 10
+  velocidadPerdigon: 10
+  cantidadPerdigones: 5
+  "anguloDispersi\xF3n": 50
+  laserRenderer: {fileID: 0}
+  laserDuracion: 0.1
+  alcance: 10
+  layerDestructible:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1798201291
 MonoBehaviour:
   m_ObjectHideFlags: 0

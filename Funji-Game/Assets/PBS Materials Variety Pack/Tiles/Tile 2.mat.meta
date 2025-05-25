@@ -1,12 +1,3 @@
-fileFormatVersion: 2
-guid: 8f6f9b3ffeb5f8943842a4e2d73561fe
-labels:
-- Tiles
-- Tile
-- Floor
-timeCreated: 1434287117
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:8376f77a1cd2c8346e8a15b2bd0891169f87cf41e4194e424ea18b663ac0dd3c
+size 212

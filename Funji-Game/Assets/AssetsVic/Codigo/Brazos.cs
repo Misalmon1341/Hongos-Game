@@ -1,27 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Brazos : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        GiroBrazos();
-    }
-    private void GiroBrazos ()
-    {
-        Vector3 mousePosition  = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
-
-        transform.up = direction;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:113f8bd05dcacc95fc10cfa4b6bf8d1eec635dff80ab4e9e806a355747dfe862
+size 628

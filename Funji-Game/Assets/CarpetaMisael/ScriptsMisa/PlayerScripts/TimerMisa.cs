@@ -1,35 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-
-public class TimerMisa : MonoBehaviour
-{
-    [SerializeField] private TMP_Text timerText;
-    [SerializeField, Tooltip("Tiempo en segundos")] private float timerTime;
-    public GameObject panelGO;
-
-    private int minutes, seconds, cents;
-
-    private void Start()
-    {
-        panelGO.SetActive(false);
-    }
-    private void Update()
-    {
-        timerTime -= Time.deltaTime;
-
-        if (timerTime < 0 ) timerTime = 0;
-        minutes = (int)(timerTime/ 60f);
-        seconds = (int)(timerTime - minutes * 60f);
-        cents = (int)((timerTime - (int)timerTime) * 100f);
-
-        timerText.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, cents);
-
-        if (timerTime == 0)
-        {
-            panelGO.SetActive(true);
-            Time.timeScale = 0f;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3705bcad0fc3730a1c0ddfef135eec1926ee56d2c604c21d2cc078ca33d7af13
+size 888

@@ -1,26 +1,3 @@
-using UnityEngine;
-using System.Collections;
-using UnityEditor;
-
-[CustomEditor(typeof(MaterialRandomizerScript))]
-public class MaterialRandomizer : Editor 
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-
-        MaterialRandomizerScript myScript = (MaterialRandomizerScript)target;
-        if(GUILayout.Button("Find Materials"))
-        {
-            myScript.findMaterials();
-        }
-        if(GUILayout.Button("Find Spheres"))
-        {
-            myScript.findMaterialSpheres();
-        }
-        if(GUILayout.Button("Randomize Materials"))
-        {
-            myScript.randomizeMaterials();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b168c610df367cd3ab5185971a4ffaeeb131dc3f97b99db147e68d711ea1e97e
+size 654

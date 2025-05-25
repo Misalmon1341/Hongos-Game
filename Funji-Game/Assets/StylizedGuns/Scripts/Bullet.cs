@@ -1,22 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Bullet : MonoBehaviour
-{
-    public GameObject explotion;
-    GameObject lastExplotion;
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            return;
-        }
-        lastExplotion=Instantiate(explotion, transform.position, transform.rotation);
-        Destroy(gameObject);
-        Destroy(lastExplotion, 1f);
-    }
-
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:58119c0e8124dc59371b2d8fc61f396590db2d0b983d9c7ee1a0e82145b5e0f8
+size 508

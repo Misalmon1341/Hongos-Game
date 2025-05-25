@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-
-public class VidaPlayer : MonoBehaviour
-{
-    private int vidaJugador = 4;
-
-    public Image psique;
-    public GameObject Extreñimiento;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b20bc70c08dc57090996bfed1598150697ccd2d3b458286ad26cedd52986a64
+size 360

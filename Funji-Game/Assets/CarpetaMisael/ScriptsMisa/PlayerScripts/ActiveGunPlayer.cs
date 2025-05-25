@@ -1,24 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ActiveGunPlayer : MonoBehaviour
-{
-    public TakeGuns takeGuns;
-    public int numeroArma;
-    
-
-    private void Start()
-    {
-        takeGuns = GameObject.FindGameObjectWithTag("Player").GetComponent<TakeGuns>();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Player")
-        {
-            takeGuns.ActiveGuns(numeroArma);
-            Destroy(gameObject);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:21710598f62acddb3832f9dea5213ec095b24ba8a73d6f0599acf4b15154c93c
+size 511

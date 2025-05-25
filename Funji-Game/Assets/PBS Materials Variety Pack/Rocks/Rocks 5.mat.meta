@@ -1,13 +1,3 @@
-fileFormatVersion: 2
-guid: 1397dbb8aaf49704a98ee06a0bf709ff
-labels:
-- Rocks
-- Stones
-- Pebbles
-- Gravel
-timeCreated: 1434390953
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:1aafd57fb97ffdad8e2441517c997cb8a5c5a0913fdfa0d4074a260825f5910d
+size 225

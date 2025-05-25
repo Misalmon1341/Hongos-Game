@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: fcf39a428c6cbfb48b1aca53c52bb11f
-labels:
-- Paint
-- Wall
-timeCreated: 1431518624
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd480d43ea1a0e01f763afc585a791bef080803702c21fd764dcaba495a6c73c
+size 204

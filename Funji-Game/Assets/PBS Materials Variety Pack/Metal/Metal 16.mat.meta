@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 419d1c3909cea20449811fda629fb769
-labels:
-- Metal
-- Fence
-timeCreated: 1435016303
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c4f48f844627670b9de8040f68039c38c34ba1105d67c5805fa5d644ef685e4
+size 205

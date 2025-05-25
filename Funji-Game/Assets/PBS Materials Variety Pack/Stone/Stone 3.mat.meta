@@ -1,12 +1,3 @@
-fileFormatVersion: 2
-guid: 2e2f8ac2d57e5344197f19949b3bc72b
-labels:
-- Stone
-- Mossy
-- Dirty
-timeCreated: 1432851064
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:f830116b9f454d2c16ce41d69f0d24e5a0995042a6740ba4b4b608f48bf9e093
+size 213

@@ -1,31 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlataformaMovil : MonoBehaviour
-{
-    private float velocidadPlataforma = 2f;
-    void FixedUpdate()
-    {
-        this.transform.position += new Vector3(velocidadPlataforma * Time.deltaTime, 0, 0);
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-        }
-        else
-        {
-            velocidadPlataforma *= -1;
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        other.transform.SetParent(this.transform);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        other.transform.SetParent(null);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:350108bf8ca3958dc4e199085a45ee5439eb320594c5d2c5f94e78b8974532c1
+size 726

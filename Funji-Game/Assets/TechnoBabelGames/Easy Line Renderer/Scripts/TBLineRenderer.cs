@@ -1,24 +1,3 @@
-using UnityEngine;
-
-namespace TechnoBabelGames
-{
-    [System.Serializable]
-    public class TBLineRenderer
-    {
-        public int linePoints;
-        public float lineWidth;
-        public float shapeSize;
-        public bool closeLoop;
-        public bool roundedEndCaps;
-        public bool roundedCorners;
-        public Color startColor;
-        public Color endColor;
-        public Material texture;
-        public TextureMode textureMode;
-        public Shape shape;
-        public Axis axis;
-        public enum TextureMode { None, Stretch, Tile }
-        public enum Shape { None, Line, Triangle, Square, Pentagon, Hexagon, Heptagon, Octagon, Nonagon, Decagon }
-        public enum Axis { FaceCamera, X, Y, Z }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2f363e25ed9b077a2d0201bfb8c1a02daf00cf93facc61e3e10ee1cf54aca00
+size 754

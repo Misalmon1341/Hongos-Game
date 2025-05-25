@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PickUp : MonoBehaviour
-{
-    public GameObject pickUpGun;
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player"&&pickUpGun!=null)
-        {
-            GameObject[] allGuns = GameObject.FindGameObjectsWithTag("Gun");
-            for(int i=0; i<allGuns.Length; i++)
-            {
-                allGuns[i].SetActive(false);
-            }
-            pickUpGun.SetActive(true);
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb657dcde10f7026156d3da1bbd722d32dc82fdd1e2ef61de4c3cd52f1dd9964
+size 544

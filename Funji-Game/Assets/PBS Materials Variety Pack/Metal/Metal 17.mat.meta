@@ -1,16 +1,3 @@
-fileFormatVersion: 2
-guid: aaf7aa61a2604e0428b66a19f2c23901
-labels:
-- Metal
-- Tile
-- Sci
-- Scifi
-- Fi
-- Plates
-- Plating
-timeCreated: 1435082029
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfa64f00952a95fcfcabf4ecf337287292af094e0dde427c006df2367147c50c
+size 242

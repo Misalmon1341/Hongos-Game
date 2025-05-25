@@ -1,12 +1,3 @@
-fileFormatVersion: 2
-guid: 80163557887c0fd4ba8ac2bbaee52a17
-labels:
-- Metal
-- Rust
-- Rusty
-timeCreated: 1434319236
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd7245b8127d93eb1e4f7a502ec6efdaaa7164f4a38016b2eee74cb46362b3c3
+size 212

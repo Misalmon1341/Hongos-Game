@@ -8,14 +8,22 @@ public class DisparadorCartas : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && cartaActiva != null)
+        if (cartaActiva == null)
         {
-            cartaActiva.Usar();
+            Debug.Log("No hay carta activa asignada");
+            return;
         }
 
-        if (Input.GetButtonDown("Fire2") && cartaActiva != null)
+        if (Input.GetButtonDown("Fire1"))
+        {
+            cartaActiva.Usar();
+            Debug.Log("Está llamando al disparo");
+        }
+
+        if (Input.GetButtonDown("Fire2"))
         {
             cartaActiva.UsarHabilidad();
+            Debug.Log("Está llamando a la habilidad");
         }
     }
 }

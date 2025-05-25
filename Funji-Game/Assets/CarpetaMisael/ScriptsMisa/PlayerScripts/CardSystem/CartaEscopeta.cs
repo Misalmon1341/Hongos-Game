@@ -22,31 +22,33 @@ public class CartaEscopeta : CartaBase
     {
         if (durabilidad <= 0) return;
 
-        DisparoHelper.EjecutarAnimacionDisparo(anim);
+        DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
         float inicioAngulo = -anguloDispersión / 2f;
         float incremento = anguloDispersión / (cantidadPerdigones - 1);
 
         for (int i = 0; i < cantidadPerdigones; i++)
         {
-            float angulo = inicioAngulo + (incremento * i);
-            Quaternion rotacion = Quaternion.Euler(0, angulo, 0);
-            Vector3 direccion = rotacion * spawnPoint.right;
+            float angulo = inicioAngulo + (incremento * i) + Random.Range(-2f, 2f);
+            float radianes = angulo * Mathf.Deg2Rad;
 
-            GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position, Quaternion.identity);
-            perdigon.GetComponent<Rigidbody>().velocity = direccion * velocidadPerdigon;
+            Vector3 direccion = new Vector3(Mathf.Cos(radianes), Mathf.Sin(radianes), 0f);
+            Vector3 offset = direccion.normalized * 0.1f * i;
+
+            GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position + offset, Quaternion.identity);
+            Rigidbody rb = perdigon.GetComponent<Rigidbody>();
+            rb.velocity = direccion.normalized * velocidadPerdigon;
         }
 
         durabilidad--;
-        if (durabilidad <= 0)
-            takeGuns.DesactivarArmas();
+        if (durabilidad <= 0) Descartar();
     }
 
     public override void UsarHabilidad()
     {
         if (durabilidad <= 0) return;
 
-        DisparoHelper.EjecutarAnimacionDisparo(anim);
+        DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
         Vector3 origen = spawnPoint.position;
         Vector3 direccion = spawnPoint.right;
@@ -65,7 +67,7 @@ public class CartaEscopeta : CartaBase
         }
 
         durabilidad = 0;
-        takeGuns.DesactivarArmas();
+        Descartar();
     }
 
     void DesactivarLaser()

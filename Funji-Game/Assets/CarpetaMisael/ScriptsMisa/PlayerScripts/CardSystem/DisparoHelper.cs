@@ -17,5 +17,5 @@ public class DisparoHelper : MonoBehaviour
         GameObject bala = Object.Instantiate(prefab, spawnPoint.position, Quaternion.identity);
         float direccionX = Mathf.Sign(spawnPoint.transform.right.x);
         bala.GetComponent<Rigidbody>().velocity = new Vector3(direccionX, 0f, 0f) * velocidad;
-    }
+    } 
 }

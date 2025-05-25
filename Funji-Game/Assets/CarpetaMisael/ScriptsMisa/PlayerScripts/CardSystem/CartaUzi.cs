@@ -17,24 +17,32 @@ public class CartaUzi : CartaBase
     {
         if (durabilidad <= 0) return;
 
-        DisparoHelper.EjecutarAnimacionDisparo(anim);
+        DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
         DisparoHelper.DispararBala(balaPrefab, spawnPoint, velocidadBala);
 
         durabilidad--;
         if (durabilidad <= 0)
-            takeGuns.DesactivarArmas();
+        {
+            Descartar();
+        }
     }
 
     public override void UsarHabilidad()
     {
         if (durabilidad <= 0) return;
 
-        DisparoHelper.EjecutarAnimacionDisparo(anim);
+        DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
+        StartCoroutine(LanzarBomba());
         GameObject bomba = Instantiate(bombaPrefab, spawnPoint.position, Quaternion.identity);
         bomba.GetComponent<Rigidbody>().AddForce(spawnPoint.right * fuerzaBomba, ForceMode.Impulse);
 
         durabilidad = 0;
-        takeGuns.DesactivarArmas();
+        Descartar();
+    }
+    IEnumerator LanzarBomba()
+    {
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Se esta ejecutando la corrutina de la bomba");
     }
 }

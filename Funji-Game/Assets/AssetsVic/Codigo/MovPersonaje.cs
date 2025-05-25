@@ -18,9 +18,11 @@ public class MovPersonaje : MonoBehaviour
     private float gravedad = 9.8f;
     [Header("Salto")]
     private float fuerzaSalto = 6f;
+    public bool EnElAire => enElAire;
     private bool enElAire = false;
     [Header("SaltoDoble")]
     private bool saltoDoble = false;
+    public bool PuedeHacerSaltoDoble => saltoDoble;
     [Header("Dash")]
     private float velocidadDash = 7f;
     private float duracionDash = 0.15f;
@@ -39,7 +41,10 @@ public class MovPersonaje : MonoBehaviour
     public LayerMask ParedLayerMask;
     private float saltoParedLateral = 10f;
     private float separacionParedSalto = 2.5f;
-
+    [Header("Salto doble especial")]
+    public bool puedeHacerSaltoDoble = false;
+    public int saltosDoblesDisponibles = 0;
+    
     void Start()
     {
         animacion = GetComponent<Animator>();
@@ -89,6 +94,7 @@ public class MovPersonaje : MonoBehaviour
             animacion.SetBool("Running", false);
             animacion.SetBool("Dash", false);
             animacion.SetBool("Pared", false);
+            
             if (tiempoBufferSalto > 0)
             {
                 Salto();
@@ -138,7 +144,12 @@ public class MovPersonaje : MonoBehaviour
         }
         controlPersonaje.Move(movimiento * Time.deltaTime);
     }
-
+    public void ActivarSaltosDobles(int cantidadSaltos)
+    {
+        puedeHacerSaltoDoble = true;
+        saltosDoblesDisponibles = cantidadSaltos;
+      
+    }
     IEnumerator Dash()
     {
         float tiempoInicial = Time.time;

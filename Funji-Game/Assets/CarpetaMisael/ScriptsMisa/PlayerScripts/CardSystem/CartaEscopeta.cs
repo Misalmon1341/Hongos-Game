@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +10,9 @@ public class CartaEscopeta : CartaBase
     public Transform spawnPoint;
     public float velocidadPerdigon = 10f;
     public int cantidadPerdigones = 5;
-    public float anguloDispersión = 50f;
+    public float anguloDispersion = 50f;
 
-    [Header("Láser")]
+    [Header("LÃ¡ser")]
     public LineRenderer laserRenderer;
     public float laserDuracion = 0.1f;
     public float alcance = 10f;
@@ -22,23 +22,26 @@ public class CartaEscopeta : CartaBase
     {
         if (durabilidad <= 0) return;
 
+
         DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
-        float inicioAngulo = -anguloDispersión / 2f;
-        float incremento = anguloDispersión / (cantidadPerdigones - 1);
+        Vector3 direccionBase = movPersonaje.transform.forward; // â† o â†’ segÃºn la rotaciÃ³n
+        float inicioAngulo = -anguloDispersion / 2f;
+        float incremento = anguloDispersion / (cantidadPerdigones - 1);
 
         for (int i = 0; i < cantidadPerdigones; i++)
         {
-            float angulo = inicioAngulo + (incremento * i) + Random.Range(-2f, 2f);
-            float radianes = angulo * Mathf.Deg2Rad;
+            float angulo = inicioAngulo + incremento * i;
+            Quaternion rotacionDisparo = Quaternion.AngleAxis(angulo, Vector3.up); // rotaciÃ³n en eje Z
 
-            Vector3 direccion = new Vector3(Mathf.Cos(radianes), Mathf.Sin(radianes), 0f);
-            Vector3 offset = direccion.normalized * 0.1f * i;
+            Vector3 direccionDisparo = rotacionDisparo * direccionBase;
 
-            GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position + offset, Quaternion.identity);
+            GameObject perdigon = Instantiate(perdigonPrefab, spawnPoint.position, Quaternion.identity);
             Rigidbody rb = perdigon.GetComponent<Rigidbody>();
-            rb.velocity = direccion.normalized * velocidadPerdigon;
+            rb.velocity = direccionDisparo.normalized * velocidadPerdigon;
         }
+
+
 
         durabilidad--;
         if (durabilidad <= 0) Descartar();

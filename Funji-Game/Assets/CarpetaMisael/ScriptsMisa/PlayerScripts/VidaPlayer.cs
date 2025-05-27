@@ -8,14 +8,30 @@ public class VidaPlayer : MonoBehaviour
 {
     private int vidaJugador = 4;
 
+    public Sprite[] fases;
     public Image psique;
-    public GameObject Extreñimiento;
+    public GameObject extreñimiento;
     void Start()
     {
-        
+        extreñimiento.SetActive(false);
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            vidaJugador--;
+            StartCoroutine(ActivarExtreñimiento());
+
+        }
+    }
+    
+    IEnumerator ActivarExtreñimiento()
+    {
+        extreñimiento.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        extreñimiento.SetActive(false);
+    }
     void Update()
     {
         

@@ -5,18 +5,23 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject explotion;
-    GameObject lastExplotion;
+    private GameObject lastExplotion;
+
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bullet")
-        {
+        // Evita colisión con otras balas
+        if (collision.gameObject.CompareTag("Bullet"))
             return;
+
+        // Instancia la explosión en la posición de impacto
+        if (explotion != null)
+        {
+            lastExplotion = Instantiate(explotion, transform.position, Quaternion.identity);
+            Destroy(lastExplotion, 1f);
         }
-        lastExplotion=Instantiate(explotion, transform.position, transform.rotation);
+
+        // Destruye la bala
         Destroy(gameObject);
-        Destroy(lastExplotion, 1f);
     }
-
-
 
 }

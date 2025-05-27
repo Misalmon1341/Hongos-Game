@@ -54,6 +54,7 @@ public class MovPersonaje : MonoBehaviour
 
     void Update()
     {
+        Application.targetFrameRate = 60;
         if (Input.GetKeyDown(KeyCode.P))
         {
             animacion.SetTrigger("Shoot");

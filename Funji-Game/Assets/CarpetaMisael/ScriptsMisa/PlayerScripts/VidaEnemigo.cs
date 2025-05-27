@@ -61,7 +61,7 @@ public class VidaEnemigo : MonoBehaviour, IDamageable
     private void Update()
     {
         BarraVidaEnemigo.value = vidaEnemigo;
-        FollowPlayer();
+        //FollowPlayer();
     }
     IEnumerator MuerteEnemigo() 
     {

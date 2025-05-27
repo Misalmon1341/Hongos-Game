@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class VidaPlayer : MonoBehaviour
@@ -12,9 +14,11 @@ public class VidaPlayer : MonoBehaviour
     public float duracionPanel = 1f;    
     public int vidasTotales = 4;
     public GameObject gameOver;
+    public GameObject panelGameplay;
 
     private int vidasActuales;
     private bool puedeRecibirDanio = true;
+    private bool poderReiniciar = false;
 
     void Start()
     {
@@ -22,8 +26,18 @@ public class VidaPlayer : MonoBehaviour
         ActualizarSpriteVida();
         panelEstres.SetActive(false);
         gameOver.SetActive(false);
+        panelGameplay.SetActive(true);
     }
-
+    private void Update()
+    {
+        if (poderReiniciar == true)
+        {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+           SceneManager.LoadScene(0);
+        }
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && puedeRecibirDanio)
@@ -46,6 +60,9 @@ public class VidaPlayer : MonoBehaviour
             Morir();
             Time.timeScale = 0;
             gameOver.SetActive(true);
+            panelEstres.SetActive(false);
+            panelGameplay.SetActive(false);
+            poderReiniciar = true;
         }
 
         yield return new WaitForSeconds(duracionPanel);

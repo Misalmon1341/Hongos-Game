@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf323a179739894b942495a5cfc6283, type: 3}
-  m_Name: Z2
+  m_Name: ZetaMalvada_Preocupada
   m_EditorClassIdentifier: 
   charactername: ???
-  profilephoto: {fileID: 0}
+  profilephoto: {fileID: 21300000, guid: 95b8b0107619203499744da219ad986e, type: 3}

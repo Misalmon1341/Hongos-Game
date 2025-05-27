@@ -6,34 +6,63 @@ using UnityEngine.UI;
 
 public class VidaPlayer : MonoBehaviour
 {
-    private int vidaJugador = 4;
+    public Sprite[] vidaSprites;        
+    public Image imagenVida;             
+    public GameObject panelEstres;       
+    public float duracionPanel = 1f;    
+    public int vidasTotales = 4;
+    public GameObject gameOver;
 
-    public Sprite[] fases;
-    public Image psique;
-    public GameObject extreñimiento;
+    private int vidasActuales;
+    private bool puedeRecibirDanio = true;
+
     void Start()
     {
-        extreñimiento.SetActive(false);
+        vidasActuales = vidasTotales;
+        ActualizarSpriteVida();
+        panelEstres.SetActive(false);
+        gameOver.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && puedeRecibirDanio)
         {
-            vidaJugador--;
-            StartCoroutine(ActivarExtreñimiento());
-
+            StartCoroutine(RecibirDanio());
         }
     }
-    
-    IEnumerator ActivarExtreñimiento()
+
+    IEnumerator RecibirDanio()
     {
-        extreñimiento.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        extreñimiento.SetActive(false);
+        puedeRecibirDanio = false;
+
+        vidasActuales--;
+        ActualizarSpriteVida();
+
+        panelEstres.SetActive(true);
+
+        if (vidasActuales <= 0)
+        {
+            Morir();
+            Time.timeScale = 0;
+            gameOver.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(duracionPanel);
+
+        panelEstres.SetActive(false);
+        puedeRecibirDanio = true;
     }
-    void Update()
+
+    void ActualizarSpriteVida()
     {
-        
+        int index = Mathf.Clamp(vidasTotales - vidasActuales, 0, vidaSprites.Length - 1);
+        imagenVida.sprite = vidaSprites[index];
+    }
+
+    void Morir()
+    {
+        Debug.Log("¡Jugador muerto!");
+        Destroy(gameObject);
     }
 }

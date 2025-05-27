@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap4_2RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Un segundo \xBFesa es mi casa?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "Hehehe vas a disculparme por esto\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "OH DIOS; HIJA \xBFESTAS BIEN?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "Espera un segundo, as\xED que as\xED sucedi\xF3\u2026 "
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "\xBFPERO QU\xC9 DIABLOS? \xBFQUIEN HARIA ALGO AS\xCF?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "Ella\u2026 solo estuvo en el lugar incorrecto y en el momento
+      incorrecto."

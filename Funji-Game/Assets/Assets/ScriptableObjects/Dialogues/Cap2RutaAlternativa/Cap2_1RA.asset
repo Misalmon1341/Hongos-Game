@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap2_1RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Dia 1 y D\xEDa 2)"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "A\xFAn no puedo creer que ocurri\xF3 esto\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "No se que sentir el hecho de que soy viuda y hu\xE9rfana ya que
+      mi familia era todo lo que amaba y se ha ido\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pero lo peor fue perder mi coraz\xF3n junto con mi Aurora querida\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: "Mi mas sentido pesame se\xF1orita Z, No cualquiera puede describir
+      lo que se siente perder a sus seres queridos de esa forma."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Tristemente tampoco me agrada la idea pero espero vivir con ello
+      alg\xFAn d\xEDa."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: Aunque hay algunas preguntas que debo hacerle, espero que no sea
+      mucha molestia.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Oh claro \xBFPasa algo malo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: Yo espero que no.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: "D\xEDgame \xBFD\xF3nde estaba usted antes de llegar aqu\xED?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Bueno yo trabajo en un hospital aqu\xED cerca y estaba atendiendo
+      personas."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: "Y usted no vio nada raro \xBFa ALGUIEN quiz\xE1?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Uhm no, yo solo hice mi trabajo como siempre.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQu\xE9? \xBFPor qu\xE9?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1\xBFOIGA QU\xC9 EST\xC1 HACIENDO?!  \xA1SU\xC9LTEME!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+    dialogueLine: "\xBFNO SABE LO QUE HIZO? NOS CONDEN\xD3 A TODOS, \xA1AHORA D\xCDGAME
+      D\xD3NDE EST\xC1 EL MALDITO DISPOSITIVO!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "no lo puedo creer, ahora ni siquiera en mi casa estoy segura,
+      MALDITA SEA QU\xC9 ES LO QUE ME EST\xC1 SUCEDIENDO."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Parece que me estoy convirtiendo en un maldito monstruo, cada
+      vez tengo m\xE1s miedo de quien soy porque no soy normal en lo absoluto."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Realmente no se que hacer\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Wow no recordaba eso\u2026 "
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Wow no recordaba eso\u2026 "
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "As\xED que as\xED me infect\xE9, al abrazar a Aurora parece que
+      este hongo logr\xF3 entrar a mi y empezar a desarrollarse mientras me desmay\xE9\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Eso explica mucho pero la pregunta es \xBFcomo rayos llego en
+      primer lugar con Aurora? tal vez esto me diga despu\xE9s."

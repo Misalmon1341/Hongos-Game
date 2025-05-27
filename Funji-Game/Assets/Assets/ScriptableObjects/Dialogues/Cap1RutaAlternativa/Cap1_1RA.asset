@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap1_1RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQu\xE9 clase de cosas son estas?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Me pregunto que pasara si recolect\xF3 varios de estos, Deben
+      ser basura."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Oh vaya\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Eso\u2026 realmente fue aterrador."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pues por lo que veo estos peque\xF1os fragmentos no son simple
+      basura."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Definitivamente debo encontrarlos.

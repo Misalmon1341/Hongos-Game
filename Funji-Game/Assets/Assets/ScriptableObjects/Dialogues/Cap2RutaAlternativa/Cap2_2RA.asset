@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap2_2RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Bien veamos qu\xE9 tenemos aqu\xED."
+  - <Character>k__BackingField: {fileID: 11400000, guid: a835e5108c139e54cb853162d9731667, type: 2}
+    dialogueLine: "Zetaaaaa\u2026 Te necesitamos\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFUh? \xBFQui\xE9n anda ah\xED?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: a835e5108c139e54cb853162d9731667, type: 2}
+    dialogueLine: Somos tus amigos y aliados Zeta, somos lo que te conecta con lo
+      que debes convertirte.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pero no comprendo \xBFD\xF3nde est\xE1s?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: a835e5108c139e54cb853162d9731667, type: 2}
+    dialogueLine: "Nosotros estamos en todos lados Zeta, pero incluso as\xED necesitamos
+      que nos acompa\xF1es a nuestro \u201CPara\xEDso\u201D donde te podremos explicar
+      todo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Ugh\u2026 supongo que no me queda mucha opci\xF3n."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Oh vaya, son\u2026 como yo\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Hola Zeta esper\xE1bamos tu llegada, acompa\xF1anos queremos presentarte
+      al l\xEDder."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Umm de acuerdo.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Saludos Zeta, Yo soy Sylbanox, El l\xEDder de los FungFolk y aquel
+      que responder\xE1 algunas de tus dudas,"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Wow erhm la verdad estoy algo asombrada pero si tengo una pregunta.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFD\xF3nde rayos estamos exactamente?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Esto Zeta es nuestro para\xEDso, un lugar donde solo nosotros
+      podemos pisar despu\xE9s de ser apartados de todo, pero no todo es malo ya
+      que gracias a ello somos m\xE1s unidos que nunca."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Ehrm bueno, Tengo otra \xBFQue rayos es el FungFolk? \xBFQue acaso
+      no es peligroso o algo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "No Zeta el FungFolk es nuestra salvaci\xF3n ya que nos ha vuelto
+      m\xE1s fuertes, mejores y sobre todo seres superiores contra todo pron\xF3stico."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFentonces no me pasara nada con esto?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Bueno veras Zeta, El FungFolk tiene algunos efectos secundarios
+      que debemos ayudarte a eliminar porque si no terminaras\u2026 ehrm\u2026 bueno\u2026
+      como tu hija, ya que estos efectos pueden controlarse pero debemos conseguir
+      la cura para que puedas ser como nosotros."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Un segundo como sabes de\u2026 bueno no importa, y qu\xE9 es lo
+      que debemos hacer."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Bueno Zeta debes infiltrarse en un laboratorio llamado \u201CG\xE9nesis\u201D
+      en este laboratorio debes encontrar un medicamento llamado \u201Cantimic\xF3tico\u201D
+      que te servir\xE1 para neutralizar el hongo y absorber sus propiedades."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Un segundo \xBFG\xE9nesis? yo sol\xEDa trabajar ah\xED, solo que
+      no sab\xEDa que era un laboratorio, seg\xFAn ten\xEDa entendido eso era un
+      centro de hospitales donde reciben gente, yo era secretaria."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Oh Zeta era obvio que no te iban a decir la verdad de forma tan
+      simple, G\xE9nesis es realmente un lugar donde experimentaron con nosotros
+      para saber qu\xE9 es lo que tenemos adentro y como pod\xEDan usarlo para prop\xF3sitos
+      militares y de guerra, nos torturaron por mucho tiempo hasta que nos hartamos
+      y escapamos, explotando el lugar y escapando, algunos de mis compatriotas murieron
+      en estos laboratorios por las pruebas, otros por la explosion pero ante todo
+      ellos saben lo importante que era la misi\xF3n de reunirse con su l\xEDder,
+      por lo que su sacrificio no fue en vano y ser\xE1n recordados."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Nosotros siempre fuimos refugiados y nos hemos escondido desde
+      siempre Zeta, Yo fui el primero en escapar de esa tortura donde experimentaron
+      conmigo donde logre escapar con muchos antimicoticos y pude refugiarme aqu\xED,
+      despues de eso pasaron algunos a\xF1os y los fungFolk restantes se fueron reuniendo
+      en el paraiso donde son libres y seguros, hasta hace poco fue cuando algunos
+      de ellos al recolectar recursos fueron secuestrados para su experimentacion
+      y por eso estaban ah\xED."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Un segundo, entonces la explosion que me salv\xF3 \xBFFueron ustedes
+      los que la provocaron?\r\nSylbanox: As\xED es Zeta aunque la explosion liber\xF3
+      a muchos de mis seguidores, tambien esperabamos que dejaran inutilizado el
+      laboratorio ya que estamos harto de las pruebas, pero no sab\xEDamos que tu
+      estabas cerca por lo que de alg\xFAn modo te llevamos a nosotros gracias a
+      ello.\r"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Un segundo entonces si todo est\xE1 en ruinas \xBFComo se supone
+      que conseguir\xE9 eso? y m\xE1s importante \xBFQue no deber\xEDa estar lleno
+      de polic\xEDas y agentes secretos?\r"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Claro que s\xED Zeta obviamente pensamos en esa posibilidad y
+      pensamos en un peque\xF1o plan\r"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Resulta que los FungFolk tenemos una peque\xF1a habilidad para
+      camuflarse con lo que tengamos a la vista por lo que con mis habilidades te
+      ayudar\xE9 a pasar por ah\xED desapercibido hasta que logres tu objetivo y
+      distraemos a todos los que debamos para que logres ser tu misma de nuevo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFY de verdad crees que pueda funcionar? Cada vez tengo m\xE1s
+      miedo de convertirme en mi hija y causar m\xE1s da\xF1o."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Por supuesto que s\xED Zeta si algo nos funcion\xF3 a nosotros
+      es que nos inyectaron con eso y a medida que vamos evolucionando nos vamos
+      adhiriendo al ADN de esta vacuna por lo que empezamos a resistir al hongo y
+      sobre todo controlarlo para ser mas fuerte, solo que por nuestra posici\xF3n
+      no somos muy bienvenidos para regresar a la sociedad por lo que debemos mantenerlo
+      oculto como podamos y no debemos dejar que las fuerzas malignas se apoderen
+      de \xE9l bajo ning\xFAn motivo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Bueno y cuando har\xEDamos este plan \xBFEn una semana o dos?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "No Zeta\u2026 me temo que debemos hacerlo ma\xF1ana."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBF\xA1MA\xD1ANA!?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBF\xA1Y POR QU\xC9 ES ESO!?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Lo que pasa es que el hongo se infecta muy r\xE1pido y si en la
+      semana de infecci\xF3n no logramos conseguir la cura te volver\xE1s como tu
+      hija, por lo que debemos actuar r\xE1pido."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pero espera un segundo \xBFY ella porque se infect\xF3 m\xE1s
+      r\xE1pido que yo? Pr\xE1cticamente fue una tarde y no pude hacer nada para
+      evitarlo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Lo que sucede es que el virus tiene una evoluci\xF3n dependiendo
+      la edad del hu\xE9sped, en los beb\xE9s es inmune y no se infecta pero en los
+      ni\xF1os y adolescentes el virus es m\xE1s err\xE1tico y su infecci\xF3n es
+      mucho mas rapida ya que su sistema inmune es muy d\xE9bil a\xFAn a diferencia
+      de un adulto que puede resistirlo un poco m\xE1s, por lo que debemos actuar
+      r\xE1pido ya que llevas 3 dias y te quedan pocos antes de que tengas efectos
+      secundarios severos."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Diablos esto de verdad es horrible ahora resulta que debo desinfectar
+      y luchar por la cura, genial,
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Todo puede verse oscuro pero prometo que todo saldr\xE1 bien Zeta
+      siempre haz tenido eso de luchadora en ti y no tendr\xE1s problema en sobrevivir."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Ugh pues no hay otro modo tendr\xE9 que ir de todas formas."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "As\xED que as\xED llegu\xE9 aqu\xED\u2026 pero espero que eso
+      no sea lo \xFAnico por lo que estoy aqu\xED."

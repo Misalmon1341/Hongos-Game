@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap4_4RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1Ah\xED est\xE1! \xA1La cura!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Vaya\u2026 me siento\u2026 igual."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQu\xE9? \xBFQu\xE9 est\xE1 sucediendo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFY PORQUE NO SUCEDI\xD3 NADA?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "TODO ESTO \xA1NO ES M\xC1S QUE UNA FARSA!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: UNA MALDITA FARSA QUE ME DEJO SIN MI VIDA
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "MALDITO, YO INCLUSO SALVE TU EST\xDAPIDA VIDA AL NO DECIR NADA"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: PORQUE PORQUE NO DIJE NADA PORQUE
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFESTO ES REALMENTE LO QUE QUER\xCDAS CONVERTIRME?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFESTO QUERIAS QUE RECORDARA?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFY PORQUE? \xBFPARA CUMPLIR UN CAPRICHO ESTUPIDO?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Oh mi querida Zeta, Creeme que nada de esto es una farsa\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "\xA1\xA1\xA1PORQUE TU ERES MI RECEPT\xC1CULO PERFECTO PARA LA
+      PERFECCI\xD3N!!!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "\xBFAcaso no lo comprendes? Siempre fuiste mi marioneta y ya es
+      hora de cortarte tus hilos para unirlos a mi y ser mas fuerte que antes."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBF\xA1 PERO CUAL ES TU MALDITO PROBLEMA!?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBF\xA1ACASO CREES QUE ESTO ES UN MALDITO JUEGO, ENFERMO MENTAL!?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1LO PERD\xCD TODO! \xA1TODOOOO! Y TODO ESTO ES TU CULPA."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Oh Zeta querida no comprendes todo este tiempo fuiste parte de
+      mi plan divino, yo sab\xEDa de lo que eras que capaz, pero en vez de infectarte
+      a ti solo desde el principio hubo un peque\xF1o error y terminamos comunic\xE1ndonos
+      con tu hija pero al final, eso nos ayud\xF3 a que llegaras con nosotros."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Zeta quiero que veas como esto es una bendici\xF3n porque ser\xE1s
+      el ser perfecto para lograr la trascendencia para ser el ser supremo, y as\xED
+      que nuestra especie sea la mejor de todas, \xA1PORQUE SEREMOS IMPARABLES!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: MALDITO ME LAS VAS A PAGAR AHHHHHHH
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Auch\u2026 ya no puedo mas\u2026 siento que este es mi fin."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Hola mami, te extra\xF1amos mucho\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Claro hija\u2026 yo igual\u2026 hice todo esto por ti"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Aunque supiera que ya no pod\xEDa volver a verte en vida, t\xFA
+      me mantuviste adelante despu\xE9s de todo\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Lo se madre y aunque yo te extra\xF1o mucho y espero que est\xE9s
+      aqu\xED conmigo, debes entender que aun no debes rendirte, Sylbanox es muy
+      peligroso y no debemos dejar que bajo ning\xFAn motivo logre su victoria."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: Te quiero mucho mami espero verte pronto.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "No, mi aurora\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Maldito ni siquiera en la muerte puedo estar en paz
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Es obvio que debo acabar contigo.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "DE UNA VEZ POR \xA1TODAS!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "S\xE9 mi hu\xE9sped \xA1Mi vasija!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Lo logr\xE9\u2026 todo esto se acab\xF3."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pero no se que es esto que siento, me siento\u2026 m\xE1s\u2026
+      fuerte y me siento mejor "

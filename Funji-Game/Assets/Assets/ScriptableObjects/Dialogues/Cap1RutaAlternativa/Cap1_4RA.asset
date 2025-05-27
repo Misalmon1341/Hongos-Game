@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap1_4RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1\xA1\xA1AAAAHHHHHH!!!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1Hola hija! \xBFC\xF3mo est\xE1s?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xA1Muy bien Mami!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xA1Tengo muchas ganas de ir contigo! Cuidar a los pacientes me
+      gusta mucho."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Hija m\xEDa, \xBFqu\xE9 te he dicho?, yo no soy una enfermera,
+      solo soy una recepcionista de ese centro de recuperaci\xF3n hija, \xBFQued\xF3
+      claro? no puedes seguir yendo a ver a los pacientes."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xA1Pero mami t\xFA ser\xEDas la mejor enfermera del mundo! Siempre
+      has estado ah\xED para mi y para todos, papi tambi\xE9n te extra\xF1o mucho\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Oh pero claro que yo tambi\xE9n lo extra\xF1o mucho\u2026 extra\xF1o
+      mucho los d\xEDas antes de la mudanza, cuando eramos felices lo suficiente,
+      deber\xE1s ser paciente conmigo unos dias cari\xF1o."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "De acuerdo es solo que quiero ir contigo mami tengo muchas cosas
+      que contarte, \xBFSab\xEDas que\u2026?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: Tu madre es muy hermosa?
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "Pero claro si yo supe en el momento que la vi que ser\xEDa tu
+      madre, dame un poco de cr\xE9dito por aqu\xED."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1Basta! me haces reir\u2026 si fui YO quien lo hizo haha."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "Cosas m\xE1s cosas menos pero aqu\xED seguimos como una familia
+      unida \xBFno es as\xED?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Claro que s\xED, Bueno si me disculpan debo irme, ya voy tarde
+      y necesitan unos reportes que no he entregado."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xA1Pero es taaaan aburrida!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: No importa solo hazla.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: No importa solo hazla.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Bueno\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xA1Nos vemos!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "\xA1Nos vemos!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Esto\u2026 aun recuerdo sus hermosas sonrisas \xBFporque todo
+      acab\xF3 as\xED?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Todo estaba bien, y\u2026 solo as\xED los perd\xED a todos."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Si esto es la b\xFAsqueda por la verdad, tengo miedo en recordar
+      lo que no podr\xE9 volver a ser nunca\u2026"

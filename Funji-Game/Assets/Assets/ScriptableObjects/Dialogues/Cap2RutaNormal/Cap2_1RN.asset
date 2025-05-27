@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap2_1RN
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "No puedo creer todo el infierno que he estado pasando estos \xFAltimos
+      d\xEDas, verdaderamente es algo agotador creer que puedo ser la persona que
+      era antes."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Antes de ser este\u2026 monstruo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: No puedes decir esas cosas, ERES MEJOR QUE ANTES.
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: "Tu \xFAnico problema es que eres d\xE9bil y solo es importante
+      tu b\xFAsqueda por la \u201Cverdad\u201D y no por quien estas destinada a ser,
+      ALGUIEN MEJOR Y M\xC1S FUERTE."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFY que sabes t\xFA de ser fuerte?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFAcaso el hecho de que estoy hablando conmigo misma es indicio
+      de ello?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Eso a mi me suena como que me estoy volviendo loca y tengo que
+      hacer que se acabe esta pesadilla.
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: Nooooo Z creeme que recordar tu pasado es lo peor que puedes hacer
+      ya que tu eres mas importante de lo que crees, eres incluso parte de un plan
+      divino que aun no comprendes.
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: "Solo no dejes que se expanda m\xE1s esta \u201Cenfermedad\u201D,
+      ya que es lo que te hace m\xE1s fuerte."
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: Solo necesitas controlarla y aprovecharla y no dejar que ella se
+      apodere de ti.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFControlarla? acaso no comprendes que no quiero ser este monstruo
+      que tuvo que hacer lo peor para poder vivir?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Al diablo con esto voy a encontrar este \u201Cantimic\xF3tico\u201D
+      y espero jam\xE1s volver a este asqueroso lugar y tener una conversaci\xF3n
+      as\xED, verdaderamente mi sanidad y mi cuerpo est\xE1n en juego."
+  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+    dialogueLine: "Buena suerte he he, realmente la necesitaras\u2026"

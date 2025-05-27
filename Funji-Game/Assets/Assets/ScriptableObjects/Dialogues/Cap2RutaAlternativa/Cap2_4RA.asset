@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap2_4RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xBFHola? \xBFQui\xE9n es?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "Hola\u2026 dime \xBFtu eres Aurora no es cierto?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "uhhhhh \xBFNo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "Haha no temas ni\xF1a, no he venido a lastimarte, veras realmente
+      quiero ayudarte\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Uhm se\xF1or usted me est\xE1 dando un poco de miedo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "No te preocupes Aurora, Todo estar\xE1 bien."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFHola hija c\xF3mo te fue?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "\xBFY ESO QUE TE IMPORTA? \xBFTU JAMAS SABRAS COMO ME SIENTO?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQu\xE9? \xBFHija te encuentras bien?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "NO IMPORTA LO QUE YO QUIERO SINO LO QUE VIENE Y NOS SALVAR\xC1
+      A TODOS DE NUESTRO DESTINO."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "AS\xCD QUE AP\xC1RTATE DE MI CAMINO Y JAM\xC1S SE TE OCURRA DETENERTE
+      EN MI PLAN DIVINO."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: NO NO NO.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: POR FAVOR ESTO NO PUEDE ESTAR PASANDO.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQUE EST\xC1 OCURRIENDO? \xBFPORQUE EST\xC1 PAS\xC1NDOME ESTO?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+    dialogueLine: "Lo siento mami\u2026 Te quiero mucho."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Esto\u2026 yo\u2026 \xBFporque me duele recordarlo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Todo simplemente se desvaneci\xF3 de mis manos\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Esta maldita COSA ME LO QUITO TODO.
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Acaso quitarme mi felicidad es parte del paquete sobre \xBFSer
+      mejor?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFEn qu\xE9 mundo esto es mejor?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Solo algo tan enfermo se le puede ocurrir algo tan desquiciado
+      como esto.

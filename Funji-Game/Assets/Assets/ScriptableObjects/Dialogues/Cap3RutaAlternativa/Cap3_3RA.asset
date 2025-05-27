@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap3_3RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Bien, Hag\xE1moslo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1Ups! lo siento."
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "No te preocupes Zeta, perdoname a mi por lo que pasara\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFUh? \xBFDisculpa? \xBFY como sabe mi nombre?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "Eso no importa, creeme me recordaras pronto aun si no me has visto\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFUh? \xBFClaro? pues ehm que tenga un buen dia supongo"
+  - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
+    dialogueLine: "Gracias, el tuyo estar\xE1 lleno de sorpresas creeme\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "As\xED que as\xED entre aqu\xED\u2026 y tambi\xE9n es el porque
+      me siento tan adolorida de todo este dolor tanto f\xEDsico como emocional."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Cada vez este viaje siento que llega a su final y a\xFAn no se
+      las respuestas de muchas preguntas."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Solo s\xE9 que debo continuar."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Todo esto\u2026 verdaderamente son unos monstruos, la gente con
+      la que seg\xFAn trabajaba, lo que les hicieron\u2026 ahora entiendo porque
+      escaparon de este infierno."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Debo continuar para por lo menos asegurar que ning\xFAn otro de
+      ellos vuelva a sufrir de esta forma."

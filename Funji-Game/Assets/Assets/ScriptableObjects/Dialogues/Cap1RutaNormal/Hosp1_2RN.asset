@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Hosp1_2RN
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "No\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Cada vez\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "son menos\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "no duele suficiente\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "No puedo\u2026 perder los recuerdos\u2026 No\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Hermana\u2026 \xBFPuedes\u2026?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQue\u2026?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQui\xE9n\u2026? \xBFD\xF3nde\u2026?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Mant\xE9n la calma\u2026 No soy tu enemigo\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xA1Sal\u2026 de mi\u2026 cabeza\u2026!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Escucha\u2026 No cundas al p\xE1nico\u2026 Sigue tu camino\u2026
+      Busco ayudar\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Tengo que seguir\u2026 Sigue\u2026 Sigue\u2026"

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Hosp1_3RN
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Sil: \xA1Wow! \xA1Realmente lo lograste, estoy impresionado!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFQu\xE9 diablos eres y qu\xE9 carajo quieres?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Vaya\u2026 no veo la necesidad de ser hostil"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Probablemente est\xE9s empezando a perder tus recuerdos Zeta y
+      eso es normal."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Soy Sylvanox, el l\xEDder de los FungFolk"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "No busco hacerte da\xF1o Zeta."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Yo te env\xEDe a este lugar para que encuentres tu cura \r\ny
+      probablemente tu salvaci\xF3n.\r\n"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Pero es m\xE1s importante que recuerdes Zeta, Necesitas recordar,
+      No lo olvides nunca."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFOlvidar que?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "Por ahora no debo dec\xEDrtelo pero debes recordarlo Zeta es realmente
+      importante."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Pffff de acuerdo loquito si as\xED dejas de molestarme me acordare."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
+    dialogueLine: "De acuerdo Zeta debes continuar\u2026"

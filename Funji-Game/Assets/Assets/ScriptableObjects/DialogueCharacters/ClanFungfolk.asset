@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf323a179739894b942495a5cfc6283, type: 3}
   m_Name: ClanFungfolk
   m_EditorClassIdentifier: 
-  charactername: 
+  charactername: ???
   profilephoto: {fileID: 0}

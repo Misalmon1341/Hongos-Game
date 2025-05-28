@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf323a179739894b942495a5cfc6283, type: 3}
   m_Name: SylvanoxDisfraz
   m_EditorClassIdentifier: 
-  charactername: Sylvanox
-  profilephoto: {fileID: 0}
+  charactername: "Extra\xF1o"
+  profilephoto: {fileID: 21300000, guid: 6b44c1027e2cf924ba6a51d95429b579, type: 3}

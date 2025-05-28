@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTurnsList:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Espero que esto sea \xFAtil:"
+    dialogueLine: "Espero que esto sea \xFAtil"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Al agarrar el objeto vemos una visi\xF3n de como Aurora es controlada
+      por el virus justo cuando pasa la tragedia)."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "\xBFQu\xE9? NO, POR FAVOR LO IMPLORO."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Sin poder hacer nada debe ver como su hija masacr\xF3 a su familia
+      y teme lo peor)."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "De verdad\u2026 mi hija realmente se volvi\xF3, en ese MONSTRUO"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}

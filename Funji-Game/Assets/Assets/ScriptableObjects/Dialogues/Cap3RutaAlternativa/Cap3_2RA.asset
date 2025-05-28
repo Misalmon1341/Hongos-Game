@@ -14,50 +14,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTurnsList:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Ok, vamos all\xE1"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Ok, vamos all\xE1."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Regresamos al hospital un par de horas despu\xE9s)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Vaya, realmente tenemos mucha gente preocupada y esto no parece
       parar\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Bien a todo esto \xBFCu\xE1ntas personas hemos tenido hoy?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "Bien a todo esto \xBFCu\xE1ntas personas hemos tenido hoy?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Dios santo, \xBF127 en una hora? definitivamente algo no est\xE1
       bien."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Bien, revisemos el informe general.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFUh? pero qu\xE9 extra\xF1o parece que hay un error con un
       archivo que evita que se pueda ver el informe."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Bien, veamos.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFUh? \xBFY esto? Yo no recuerdo que entrara este paciente,
       sus datos est\xE1n incompletos, no tiene foto y parece que desapareci\xF3 la
-      fecha solo parece tener un nombre \r\n\u201CCODENAME S\u201D\r\n"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+      fecha solo parece tener un nombre \r\n\u201CCODENAME S\u201D.\r"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFS? \xBFquien rayos es ese? \xA1Y me refiero al sujeto y al
-      nombre!"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFY porque tiene un nombre extra\xF1o?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+      nombre!."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "\xBFY porque tiene un nombre extra\xF1o?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (De pronto abruptamente el archivo parece cerrarse frente a ella
+      y desaparecer frente a ella).
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Ehhhhh\u2026. no tengo idea de como explicar esto de alg\xFAn
       modo."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFQu\xE9 rayos fue todo eso? \xBFAcaso vi algo que estaba en
-      los archivos de la empresa que de alg\xFAn modo se col\xF3 en mis registros? "
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+      los archivos de la empresa que de alg\xFAn modo se col\xF3 en mis registros?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Si es as\xED es realmente raro\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regreso al presente).
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Un segundo, estos registros\u2026 \xBFSer\xE1 posible que? \xBFRealmente
       estaban creando alguna especie de especie avanzada o alg\xFAn experimento raro?
-      Ahora que lo recuerdo el nombre cobra un poco m\xE1s de sentido"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+      Ahora que lo recuerdo el nombre cobra un poco m\xE1s de sentido."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFEntonces todo este tiempo puede realmente estar en la zona
-      de infecci\xF3n y siempre pude evitar esta tragedia ?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+      de infecci\xF3n y siempre pude evitar esta tragedia?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFY tambi\xE9n como que \u201CCODENAME S\u201D? \xBFEso significa
       que hab\xEDa m\xE1s sujetos de prueba que llegaron de alguna forma a la letra
-      S?"
+      S?."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Este lugar cada vez me da escalofr\xEDos, probablemente estuve
       ayudando a estos enfermos a experimentar con ellos y no tengo idea de porque
@@ -65,7 +72,7 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Igual podr\xEDa explicar el porque mi pago era realmente alto
       para mi puesto\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFAcaso soy una buena persona? \xBFAlguna vez lo fui?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "\xBFAcaso soy una buena persona? \xBFAlguna vez lo fui?."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Supongo que siempre ser\xE9 un MONSTRUO\u2026"

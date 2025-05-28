@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueTurnsList:
   - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
     dialogueLine: "Sil: \xA1Wow! \xA1Realmente lo lograste, estoy impresionado!"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "\xBFQu\xE9 diablos eres y qu\xE9 carajo quieres?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
     dialogueLine: "Vaya\u2026 no veo la necesidad de ser hostil"
@@ -32,7 +32,7 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
     dialogueLine: "Pero es m\xE1s importante que recuerdes Zeta, Necesitas recordar,
       No lo olvides nunca."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFOlvidar que?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 7a3f326f73c722646b509c0d976e477f, type: 2}
     dialogueLine: "Por ahora no debo dec\xEDrtelo pero debes recordarlo Zeta es realmente

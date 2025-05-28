@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Doctores
   m_EditorClassIdentifier: 
   charactername: Doctora
-  profilephoto: {fileID: 0}
+  profilephoto: {fileID: 21300000, guid: eaec37cff89f1fd4e83fad62f830779b, type: 3}

@@ -3,7 +3,8 @@ guid: bec0134ba612d83459a1ae59191df7a7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - dialogue: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

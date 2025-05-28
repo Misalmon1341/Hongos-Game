@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: Cap2_1RN
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "No puedo creer todo el infierno que he estado pasando estos \xFAltimos
       d\xEDas, verdaderamente es algo agotador creer que puedo ser la persona que
       era antes."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "Antes de ser este\u2026 monstruo."
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
     dialogueLine: No puedes decir esas cosas, ERES MEJOR QUE ANTES.
-  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 37aea5d84d616c14694c156a3c05ba31, type: 2}
     dialogueLine: "Tu \xFAnico problema es que eres d\xE9bil y solo es importante
       tu b\xFAsqueda por la \u201Cverdad\u201D y no por quien estas destinada a ser,
       ALGUIEN MEJOR Y M\xC1S FUERTE."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "\xBFY que sabes t\xFA de ser fuerte?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFAcaso el hecho de que estoy hablando conmigo misma es indicio
       de ello?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: Eso a mi me suena como que me estoy volviendo loca y tengo que
       hacer que se acabe esta pesadilla.
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
@@ -43,12 +43,12 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
     dialogueLine: Solo necesitas controlarla y aprovecharla y no dejar que ella se
       apodere de ti.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "\xBFControlarla? acaso no comprendes que no quiero ser este monstruo
       que tuvo que hacer lo peor para poder vivir?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Al diablo con esto voy a encontrar este \u201Cantimic\xF3tico\u201D
       y espero jam\xE1s volver a este asqueroso lugar y tener una conversaci\xF3n
       as\xED, verdaderamente mi sanidad y mi cuerpo est\xE1n en juego."
-  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9b049c16365e0084a87b56e8d649b53e, type: 2}
     dialogueLine: "Buena suerte he he, realmente la necesitaras\u2026"

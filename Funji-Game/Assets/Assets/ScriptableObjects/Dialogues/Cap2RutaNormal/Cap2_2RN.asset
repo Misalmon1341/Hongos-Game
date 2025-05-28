@@ -16,7 +16,7 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Cada vez siento una conexi\xF3n m\xE1s profunda con esto y me
       pregunto si estoy cerca del fin."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBF\u201CLugar de contagio Genesis\u201D? \xBFQu\xE9 rayos significa
       eso? \xBFAqu\xED fue donde empez\xF3 el brote?."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}

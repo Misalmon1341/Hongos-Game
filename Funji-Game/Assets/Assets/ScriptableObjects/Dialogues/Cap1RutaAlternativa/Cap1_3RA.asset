@@ -13,23 +13,27 @@ MonoBehaviour:
   m_Name: Cap1_3RA
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Est\xE1 brillando m\xE1s fuerte de lo usual"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "\xBFQu\xE9 rayos significa esto?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Se nos revela que Z tiene un recuerdo donde hay mucha sangre,
+      probablemente es su casa y su bella hija yac\xEDa en el piso inmovil, Aunque
+      con muchas dudas aun no era tiempo para respuestas)\r\n"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Oh no\u2026"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Creo que lo recuerdo.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: Definitivamente ese maldito dia
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Ese maldito dia donde toda mi vida se destruyo y jam\xE1s pude
       recuperarla"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Aquel donde no pude hacer nada y nunca podr\xE9 hacer algo."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFPOR QU\xCB? \xBFPOR QU\xCB NO PUDE HACER NADA?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
+    dialogueLine: "\xBFPOR QU\xC9? \xBFPOR QU\xC9 NO PUDE HACER NADA?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "De haber sabido que ten\xEDa esta maldita enfermedad seguir\xEDa
       con mi Aurora querida\u2026"

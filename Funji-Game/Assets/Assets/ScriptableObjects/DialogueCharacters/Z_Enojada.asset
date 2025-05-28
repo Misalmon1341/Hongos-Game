@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Z_Enojada
   m_EditorClassIdentifier: 
   charactername: Zeta
-  profilephoto: {fileID: 21300000, guid: 68e80135e934fe14e9a768a432fe8986, type: 3}
+  profilephoto: {fileID: 21300000, guid: 540a47ed288d5cd46bf8b34d0dc406cc, type: 3}

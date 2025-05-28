@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Doctor_Asustado
   m_EditorClassIdentifier: 
   charactername: Doctor
-  profilephoto: {fileID: 21300000, guid: c7f37305eb2d1974d83503c284c4a334, type: 3}
+  profilephoto: {fileID: 21300000, guid: 8292cd2c2af309848bde2204f0dd23bb, type: 3}

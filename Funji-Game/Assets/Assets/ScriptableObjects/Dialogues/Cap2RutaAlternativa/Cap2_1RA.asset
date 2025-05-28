@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTurnsList:
   - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
-    dialogueLine: "(Dia 1 y D\xEDa 2)"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "(Dia 1 y D\xEDa 2 de la infecci\xF3n)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "A\xFAn no puedo creer que ocurri\xF3 esto\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "No se que sentir el hecho de que soy viuda y hu\xE9rfana ya que
       mi familia era todo lo que amaba y se ha ido\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Pero lo peor fue perder mi coraz\xF3n junto con mi Aurora querida\u2026"
   - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
     dialogueLine: "Mi mas sentido pesame se\xF1orita Z, No cualquiera puede describir
       lo que se siente perder a sus seres queridos de esa forma."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Tristemente tampoco me agrada la idea pero espero vivir con ello
       alg\xFAn d\xEDa."
   - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
     dialogueLine: Aunque hay algunas preguntas que debo hacerle, espero que no sea
       mucha molestia.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Oh claro \xBFPasa algo malo?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
     dialogueLine: Yo espero que no.
@@ -42,30 +42,51 @@ MonoBehaviour:
       personas."
   - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
     dialogueLine: "Y usted no vio nada raro \xBFa ALGUIEN quiz\xE1?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: Uhm no, yo solo hice mi trabajo como siempre.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(De pronto vemos que el doctor tiene un peque\xF1o auricular y
+      decide escuchar de \xE9l una peque\xF1a palabra \u201CEs ella. llevensela\u201D)"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 115670080eb6a5d4aa91818f77e8f77f, type: 2}
+    dialogueLine: "Lo lamento pero debe venir de inmediato.\r"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFQu\xE9? \xBFPor qu\xE9?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (En ese momento el doctor se pone una mascarilla y intenta agarrar
+      a Z del brazo)
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "\xA1\xBFOIGA QU\xC9 EST\xC1 HACIENDO?!  \xA1SU\xC9LTEME!"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 92471aecd1719b64ba7c41ce1ee4f143, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 115670080eb6a5d4aa91818f77e8f77f, type: 2}
     dialogueLine: "\xBFNO SABE LO QUE HIZO? NOS CONDEN\xD3 A TODOS, \xA1AHORA D\xCDGAME
       D\xD3NDE EST\xC1 EL MALDITO DISPOSITIVO!"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Entre el forcejeo Zeta se logra liberar y corre de algunas unidades
+      policiales que la van persiguiendo).
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Mientras va corriendo escuchamos una explosion enorme proveniente
+      de enfrente donde Zeta y la polic\xEDa sale volando por la explosion donde
+      la polic\xEDa va de inmediato a investigar)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Zeta deja de ser perseguida pero Zeta aprovecha para seguir corriendo
+      y se esconde en el lugar que se dice que est\xE1 prohibido siquiera pasar)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "no lo puedo creer, ahora ni siquiera en mi casa estoy segura,
       MALDITA SEA QU\xC9 ES LO QUE ME EST\xC1 SUCEDIENDO."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Parece que me estoy convirtiendo en un maldito monstruo, cada
       vez tengo m\xE1s miedo de quien soy porque no soy normal en lo absoluto."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Realmente no se que hacer\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Despu\xE9s de esto Z se duerme y no logra contener sus l\xE1grimas
+      incluso dormida ya que ha perdido todo y no parece haber vuelta atr\xE1s\u2026)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regresamos al presente).
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Wow no recordaba eso\u2026 "
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Wow no recordaba eso\u2026 "
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "As\xED que as\xED me infect\xE9, al abrazar a Aurora parece que
       este hongo logr\xF3 entrar a mi y empezar a desarrollarse mientras me desmay\xE9\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Eso explica mucho pero la pregunta es \xBFcomo rayos llego en
       primer lugar con Aurora? tal vez esto me diga despu\xE9s."

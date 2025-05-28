@@ -13,16 +13,23 @@ MonoBehaviour:
   m_Name: Cap4_2RA
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Un segundo \xBFesa es mi casa?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "Un segundo \xBFesa es mi casa?."
   - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
     dialogueLine: "Hehehe vas a disculparme por esto\u2026"
   - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
-    dialogueLine: "OH DIOS; HIJA \xBFESTAS BIEN?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "OH DIOS HIJA MIA \xBFESTAS BIEN?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Aurora esta aturdida por el dolor pero de pronto voltea a ver
+      a su padre con unas risas y unos extra\xF1os ojos rojos\u2026)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 846c84a1bcdaac244888f016fb0d29ac, type: 2}
+    dialogueLine: HAHAHAHAHAHAHAHAHA
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regresamos al presente).
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Espera un segundo, as\xED que as\xED sucedi\xF3\u2026 "
-  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: "\xBFPERO QU\xC9 DIABLOS? \xBFQUIEN HARIA ALGO AS\xCF?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Ella\u2026 solo estuvo en el lugar incorrecto y en el momento
       incorrecto."

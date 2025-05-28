@@ -13,32 +13,33 @@ MonoBehaviour:
   m_Name: Cap3_3RA
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Bien, Hag\xE1moslo."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Regresamos al pasado despu\xE9s de una media hora despu\xE9s
+      del incidente de los registros y ah\xED aparece algo \xBFExtra\xF1o?)"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Zeta se levanta un poco para estirarse cuando de pronto sin querer
+      una persona choca sin querer con ella).
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xA1Ups! lo siento."
   - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
     dialogueLine: "No te preocupes Zeta, perdoname a mi por lo que pasara\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFUh? \xBFDisculpa? \xBFY como sabe mi nombre?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "\xBFUh? \xBFDisculpa? \xBFY como sabe mi nombre?."
   - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
     dialogueLine: "Eso no importa, creeme me recordaras pronto aun si no me has visto\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFUh? \xBFClaro? pues ehm que tenga un buen dia supongo"
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "\xBFUh? \xBFClaro? pues ehm que tenga un buen dia supongo."
   - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
     dialogueLine: "Gracias, el tuyo estar\xE1 lleno de sorpresas creeme\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regreso al presente).
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "As\xED que as\xED entre aqu\xED\u2026 y tambi\xE9n es el porque
       me siento tan adolorida de todo este dolor tanto f\xEDsico como emocional."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Cada vez este viaje siento que llega a su final y a\xFAn no se
       las respuestas de muchas preguntas."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Solo s\xE9 que debo continuar."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Todo esto\u2026 verdaderamente son unos monstruos, la gente con
-      la que seg\xFAn trabajaba, lo que les hicieron\u2026 ahora entiendo porque
-      escaparon de este infierno."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "Debo continuar para por lo menos asegurar que ning\xFAn otro de
-      ellos vuelva a sufrir de esta forma."

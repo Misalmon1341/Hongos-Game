@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Cap1_4RA
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "\xA1\xA1\xA1AAAAHHHHHH!!!"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(De pronto vemos c\xF3mo regresamos a conocer a Aurora en un dia
+      donde ambas r\xEDen, se divierten y pasan el tiempo juntas)."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "\xA1Hola hija! \xBFC\xF3mo est\xE1s?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
@@ -49,23 +52,28 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Claro que s\xED, Bueno si me disculpan debo irme, ya voy tarde
       y necesitan unos reportes que no he entregado."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
+    dialogueLine: "Claro que si cari\xF1o, Me asegurare que esta mentirosilla haga
+      su tarea, no como la \xFAltima vez."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a678fde6def2634981e78f7a2c09ca1, type: 2}
     dialogueLine: "\xA1Pero es taaaan aburrida!"
   - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
     dialogueLine: No importa solo hazla.
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: No importa solo hazla.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a678fde6def2634981e78f7a2c09ca1, type: 2}
     dialogueLine: "Bueno\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 7a678fde6def2634981e78f7a2c09ca1, type: 2}
     dialogueLine: "\xA1Nos vemos!"
   - <Character>k__BackingField: {fileID: 11400000, guid: 20936df941b608542a0f733b95d912d5, type: 2}
     dialogueLine: "\xA1Nos vemos!"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regresamos al presente).
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Esto\u2026 aun recuerdo sus hermosas sonrisas \xBFporque todo
       acab\xF3 as\xED?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Todo estaba bien, y\u2026 solo as\xED los perd\xED a todos."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Si esto es la b\xFAsqueda por la verdad, tengo miedo en recordar
       lo que no podr\xE9 volver a ser nunca\u2026"

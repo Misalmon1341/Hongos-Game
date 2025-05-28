@@ -15,9 +15,16 @@ namespace DialogueSystem
             DIalogueManager.Instance.StartDialogue(dialogue);
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.CompareTag("Player"))
+            {
+                TriggerDialogue();
+            }
+        }
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(collision.CompareTag("Player"))
+            if (collision.CompareTag("Player"))
             {
                 TriggerDialogue();
             }

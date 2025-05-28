@@ -13,14 +13,24 @@ MonoBehaviour:
   m_Name: Cap1_1RA
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFQu\xE9 clase de cosas son estas?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Me pregunto que pasara si recolect\xF3 varios de estos, Deben
       ser basura."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(De pronto una ligera imagen sobre Zeta en un espejo se hace presente
+      donde lentamente empieza a sucumbir a la locura del FungFolk, Donde grita pero
+      sus gritos son ahogados y parecen no tener ning\xFAn efecto ya que nadie puede
+      escucharlos)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Asimismo ella empieza a crecer unas peque\xF1as esporas, lianas
+      y venas que empiezan a infectar su cuerpo, llen\xE1ndolo de angustia, dolor
+      y terror hacia ella ya que se puede ver que est\xE1 con un dolor indescriptible,
+      Hasta que regresa su cara a la normalidad y se va la visi\xF3n)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 528f0d17576ea2f43a50ed1bb2a45ae5, type: 2}
     dialogueLine: "Oh vaya\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Eso\u2026 realmente fue aterrador."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Pues por lo que veo estos peque\xF1os fragmentos no son simple

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf323a179739894b942495a5cfc6283, type: 3}
-  m_Name: Sylvanox
+  m_Name: SylvanoxLoco
   m_EditorClassIdentifier: 
   charactername: Sylvanox
-  profilephoto: {fileID: 0}
+  profilephoto: {fileID: 21300000, guid: 66b25eb3b7ca06d4ba650e9489d22f0f, type: 3}

@@ -15,9 +15,16 @@ MonoBehaviour:
   dialogueTurnsList:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Bien hag\xE1moslo"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Al recoger el objeto vemos una visi\xF3n de Zeta siendo algo
+      m\xE1s, algo que trasciende en este mundo para ser algo poderoso, grande, esperanzador\u2026)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Algo que adem\xE1s tiene muchos seguidores detr\xE1s suyo por
+      lo que suponemos que se volvi\xF3 la l\xEDder pero simplemente vemos unos fragmentos
+      de ella siendo una especie de dios con todo)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Un segundo \xBFEso...no era yo\u2026 o si"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFY porque me da un escalofr\xEDo? \xBFEs realmente lo que estoy
       destinada a ser?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}

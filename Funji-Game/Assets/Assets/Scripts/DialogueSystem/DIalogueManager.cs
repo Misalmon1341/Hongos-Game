@@ -8,7 +8,7 @@ namespace DialogueSystem
     public class DIalogueManager : MonoBehaviour
     {
         [SerializeField] private DialogueUI dialogueUI;
-        [SerializeField] private float typingspeed = 0.05f;
+        [SerializeField] private float typingspeed = 0.02f;
         [SerializeField] private AudioSource typingAudioSource;
         public static DIalogueManager Instance {  get; private set; }
         private Queue<DialogueTurn> dialogueTurnsQueue;
@@ -42,7 +42,7 @@ namespace DialogueSystem
                 var currentturn = dialogueTurnsQueue.Dequeue();
                 dialogueUI.SetCharacterInfo(currentturn.Character);
                 dialogueUI.ClearDialogArea();
-                yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return));
+                yield return StartCoroutine(TypeSentence(currentturn));
 
                 yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return));
                 yield return null;

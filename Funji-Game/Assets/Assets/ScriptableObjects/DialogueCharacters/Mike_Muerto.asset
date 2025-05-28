@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Mike_Muerto
   m_EditorClassIdentifier: 
   charactername: Mike
-  profilephoto: {fileID: 21300000, guid: 81ae1fcb09d0e834c8e18390f05b83d5, type: 3}
+  profilephoto: {fileID: 21300000, guid: d6f22d77cdee8ef46b8549e1f6d2a8ef, type: 3}

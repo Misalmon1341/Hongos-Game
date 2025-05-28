@@ -26,37 +26,54 @@ MonoBehaviour:
     dialogueLine: "Uhm se\xF1or usted me est\xE1 dando un poco de miedo."
   - <Character>k__BackingField: {fileID: 11400000, guid: f3f22ed838eafc944aaec648dfb4a6e5, type: 2}
     dialogueLine: "No te preocupes Aurora, Todo estar\xE1 bien."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Intuimos que a Aurora le sucedi\xF3 algo ya que la escena se
+      corta, al saber que paso algo que a\xFAn no entendemos, de pronto Aurora ya
+      no es la misma, es un MONSTRUO\u2026)"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "\xBFHola hija c\xF3mo te fue?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 846c84a1bcdaac244888f016fb0d29ac, type: 2}
     dialogueLine: "\xBFY ESO QUE TE IMPORTA? \xBFTU JAMAS SABRAS COMO ME SIENTO?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFQu\xE9? \xBFHija te encuentras bien?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 846c84a1bcdaac244888f016fb0d29ac, type: 2}
     dialogueLine: "NO IMPORTA LO QUE YO QUIERO SINO LO QUE VIENE Y NOS SALVAR\xC1
       A TODOS DE NUESTRO DESTINO."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 846c84a1bcdaac244888f016fb0d29ac, type: 2}
     dialogueLine: "AS\xCD QUE AP\xC1RTATE DE MI CAMINO Y JAM\xC1S SE TE OCURRA DETENERTE
       EN MI PLAN DIVINO."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Z mira la escena y encuentra el horror, toda su familia fue asesinada
+      por Aurora en un brote raro de psicosis donde no parece ser ella misma).
+  - <Character>k__BackingField: {fileID: 11400000, guid: c18e5a5b149c5794fa4f35eb49ab5811, type: 2}
+    dialogueLine: ...
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Zeta evidentemente se asusta ante la escena y decide que debe
+      buscar ayuda, cuando de pronto Aurora pierde el control sobre su madre, entre
+      muchos forcejeos Zeta recibe una mordida de su hija).
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Retorci\xE9ndose del dolor Zeta empuja a su hija con tanta fuerza
+      que su cabeza golpea fuertemente el cerebro de la ni\xF1a lo que hace que le
+      de un derrame cerebral)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: NO NO NO.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: POR FAVOR ESTO NO PUEDE ESTAR PASANDO.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: "\xBFQUE EST\xC1 OCURRIENDO? \xBFPORQUE EST\xC1 PAS\xC1NDOME ESTO?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 032a2346ef398534db35bc592cddec26, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
+    dialogueLine: "\xBFQUE EST\xC1 OCURRIENDO? \xBFPORQUE EST\xC1 PAS\xC1NDOME ESTO?."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 988152c1a067de74eba18afde23184fd, type: 2}
     dialogueLine: "Lo siento mami\u2026 Te quiero mucho."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Esto\u2026 yo\u2026 \xBFporque me duele recordarlo?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Todo simplemente se desvaneci\xF3 de mis manos\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: a0d1771ac6801224392f8290f9cc0970, type: 2}
     dialogueLine: Esta maldita COSA ME LO QUITO TODO.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Acaso quitarme mi felicidad es parte del paquete sobre \xBFSer
       mejor?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFEn qu\xE9 mundo esto es mejor?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: Solo algo tan enfermo se le puede ocurrir algo tan desquiciado
       como esto.

@@ -13,39 +13,39 @@ MonoBehaviour:
   m_Name: Cap3_1RN
   m_EditorClassIdentifier: 
   dialogueTurnsList:
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Uhhhh \xBFQue se supone que estoy viendo?"
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "Realmente son estos aquellos sujetos de prueba de los que por
       alg\xFAn motivo puedo recordar?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBFAcaso incluso en la muerte mi enfermedad es capaz de comunicarse
       con lo que ha sucedido?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Esto es tan confuso\u2026 ya no distingo lo que recuerdo y lo
       que puedo ver."
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: Parece como si me hubiese perdido a mi misma.
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
     dialogueLine: "\xBFQu\xE9 si te has perdido?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 37aea5d84d616c14694c156a3c05ba31, type: 2}
     dialogueLine: "Nooo Zetaaa\u2026 Esto no es m\xE1s que el comienzo de algo mejor\u2026
       algo que puede durar por siempre."
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
     dialogueLine: "Acaso no sientes el poder que surge en tu interior? \xBFLa adrenalina
       que surge en tu cuerpo?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 37aea5d84d616c14694c156a3c05ba31, type: 2}
     dialogueLine: Creeme Zeta esto es mejor que recuperar quien eras
   - <Character>k__BackingField: {fileID: 11400000, guid: e780ceaf15a65884b8b276036f9e2e8f, type: 2}
     dialogueLine: "Dime realmente \xBFVale la pena ser quien eras antes? realmente
       lo has perdido todo y esto no es m\xE1s que un regalo divino para ti\u2026"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Maldita sea, incluso mi cabeza est\xE1 dando vueltas y me estoy
       volviendo realmente loca."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Espero que esta pesadilla acabe.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "Aunque supongo que tiene raz\xF3n, \xBFRealmente tengo otra opci\xF3n?
       \xBFPuedo volver a empezar de nuevo?"
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 9f0e2b8a2659c584592647edecf6e249, type: 2}
     dialogueLine: "Solo el tiempo lo dir\xE1\u2026"

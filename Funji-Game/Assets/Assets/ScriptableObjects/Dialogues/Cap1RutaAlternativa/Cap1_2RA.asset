@@ -16,11 +16,13 @@ MonoBehaviour:
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Wow es otro de estos.
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
-    dialogueLine: Wow es otro de estos.
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: "\xBFPor qu\xE9 tengo la extra\xF1a sensaci\xF3n de que quiere
       decirme algo? "
-  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Al seguir el objeto le muestra un peque\xF1o recuerdo, En este
+      vemos a su peque\xF1a hija Aurora en donde simplemente la vemos m\xE1s no hacemos
+      algo m\xE1s)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
     dialogueLine: "\xBF\xA1PERO QU\xC9 RAYOS FUE ESO!? \xBFporque vi a mi bella Aurora?."
   - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
     dialogueLine: Tengo que seguir con esto.

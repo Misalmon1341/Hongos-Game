@@ -14,16 +14,19 @@ namespace DialogueSystem
         [SerializeField] private Image characterphoto;
         [SerializeField] private TextMeshProUGUI charactername;
         [SerializeField] private TextMeshProUGUI dialogarea;
+        [SerializeField] private GameObject PanelTimer;
 
         public void ShowDialogBox()
         {
             panel.SetActive(true);
             dialogbox.gameObject.SetActive(true);
+            PanelTimer.SetActive(false);
         }
         public void HideDialogBox()
         {   
             panel.SetActive(false);
             dialogbox.gameObject.SetActive(false);
+            PanelTimer.SetActive(true);
         }
         public void SetCharacterInfo(DialogueCharacterSo character)
         {

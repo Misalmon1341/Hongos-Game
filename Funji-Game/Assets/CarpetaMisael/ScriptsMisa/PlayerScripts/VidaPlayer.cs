@@ -59,7 +59,7 @@ public class VidaPlayer : MonoBehaviour
         imagenVida.sprite = vidaSprites[index];
     }
 
-    public void Morir()
+    void Morir()
     {
         Debug.Log("¡Jugador muerto!");
 

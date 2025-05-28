@@ -21,10 +21,6 @@ public abstract class CartaBase : MonoBehaviour, ICarta
         movPersonaje = GameObject.FindGameObjectWithTag("Player").GetComponent<MovPersonaje>();
         shot = GetComponent<Shot>();
     }
-    public virtual void Start()
-    {
-        durabilidad = durabilidadMaxima;
-    }
 
     public abstract void Usar();
     public abstract void UsarHabilidad();

@@ -32,5 +32,5 @@ Material:
     - _Scrollspeed: 0.01
     - __dirty: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.6016819, b: 0.7490197, a: 1}
+    - _BaseColor: {r: 0, g: 0.037605118, b: 0.04681373, a: 1}
   m_BuildTextureStacks: []

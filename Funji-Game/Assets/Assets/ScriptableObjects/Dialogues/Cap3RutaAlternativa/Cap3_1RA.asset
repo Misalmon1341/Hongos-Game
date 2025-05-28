@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90696683129a2db4b9da6af5e6b9fc33, type: 3}
+  m_Name: Cap3_1RA
+  m_EditorClassIdentifier: 
+  dialogueTurnsList:
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Bien, hag\xE1moslo."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: "(Al agarrar el objeto recuerda el d\xEDa en el que se fue a trabajar
+      antes de regresar a su casa, pero esta vez todo se ve \xBFNormal?)."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Agh \xBFDe donde sali\xF3 toda esta gente? \xBFAcaso hubo una
+      emergencia o algo?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 70203d87426a4f34491be32146347e39, type: 2}
+    dialogueLine: "\xBFNo lo sab\xEDas? toda la ciudad est\xE1 hecha un caos, al
+      parecer estamos ante una pandemia o algo parecido"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "\xBFUna pandemia? \xBFDe qu\xE9 rayos est\xE1s hablando?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 70203d87426a4f34491be32146347e39, type: 2}
+    dialogueLine: "Si\u2026 O\xED que la polic\xEDa y los enfermeros estaban por
+      todos lados, parece que quieren evitar que gente extra\xF1a se haya escapado
+      de un centro de cuarentena y hayan logrado escabullirse entre nosotros."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "\xBFQu\xE9? un segundo \xBFdices que hay gente suelta con un virus?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 70203d87426a4f34491be32146347e39, type: 2}
+    dialogueLine: "Es lo que se dice por ah\xED pero espero que realmente no sea
+      cierto, ya llevo m\xE1s de 9 horas en mi turno, la gente verdaderamente est\xE1
+      un poco paranoica y no sabe qu\xE9 hacer."
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "Maldici\xF3n espero que este todo bien."
+  - <Character>k__BackingField: {fileID: 11400000, guid: 5ed68f852975d7c4bb2a1584744e11bc, type: 2}
+    dialogueLine: (Regresamos al presente).
+  - <Character>k__BackingField: {fileID: 11400000, guid: cfdd06ad5a9c7cf41a65644cf0ecae81, type: 2}
+    dialogueLine: "Un segundo\u2026 yo recuerdo eso, \xBFEntonces siempre supe del
+      contagio y aun as\xED no me preocup\xE9 en lo absoluto?"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: "Esto es verdaderamente extra\xF1o\u2026 jurar\xEDa que el brote
+      estaba muy lejos de donde est\xE1bamos nosotros\u2026"
+  - <Character>k__BackingField: {fileID: 11400000, guid: 2d41504b2679a5a438eb0bd71c80e345, type: 2}
+    dialogueLine: Mejor seguir investigando.

@@ -1,224 +1,70 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MovPersonaje : MonoBehaviour
 {
     [Header("Personaje")]
-    public Animator animacion;
-    public Animator Animator => animacion;
-
-    [HideInInspector] public bool estaDisparando = false;
-
-    public float velocidad = 1.5f;
+    private Animator animacion;
+    private float velocidad = 1.5f;
     private float hInput;
     private Quaternion rotacionPersonaje;
     private CharacterController controlPersonaje;
     private Vector3 movimiento;
     [Header("Gravedad")]
-    private float gravedad = 9.8f;
+    private float gravedad = 0.3f;
     [Header("Salto")]
-    private float fuerzaSalto = 6f;
-    public bool EnElAire => enElAire;
+    private float FuerzaSalto = 5f;
     private bool enElAire = false;
     [Header("SaltoDoble")]
     private bool saltoDoble = false;
-    public bool PuedeHacerSaltoDoble => saltoDoble;
-    [Header("Dash")]
-    private float velocidadDash = 7f;
-    private float duracionDash = 0.15f;
-    private bool dashActivo = false;
-    [Header("Coyote")]
-    private bool coyoteActivo = true;
-    private float tiempoCoyote = 0;
-    private float duracionCoyoteTime = 0.08f;
-    [Header("Buffer")]
-    private float tiempoBufferSalto = 0f;
-    private float duracionBufferSalto = 0.1f;
-    [Header("WallJump")]
-    private bool enLaPared = false;
-    private Vector3 posicionRayCast;
-    private float centradoRayCast = 0.5f;
-    public LayerMask ParedLayerMask;
-    private float saltoParedLateral = 10f;
-    private float separacionParedSalto = 2.5f;
-    [Header("Salto doble especial")]
-    public bool puedeHacerSaltoDoble = false;
-    public int saltosDoblesDisponibles = 0;
-    
+
+    // Start is called before the first frame update
     void Start()
     {
         animacion = GetComponent<Animator>();
-        controlPersonaje = this.GetComponent<CharacterController>();
+        controlPersonaje = GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Application.targetFrameRate = 60;
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            animacion.SetTrigger("Shoot");
-            Debug.Log("Trigger disparar lanzado desde MovPersonaje");
-        }
+        moverPersonaje();
 
-
-        if (!estaDisparando)
-        {
-            moverPersonaje();
-        }
-        else
-        {
-            movimiento.x = 0;
-            movimiento.y -= gravedad * Time.deltaTime;
-            animacion.SetBool("Running", false);
-            animacion.SetBool("Dash", false);
-            animacion.SetBool("Jumping", false);
-            controlPersonaje.Move(movimiento * Time.deltaTime);
-        }
     }
-
     void moverPersonaje()
     {
         hInput = Input.GetAxisRaw("Horizontal");
-        if (!enLaPared)
-        {
-            movimiento.x = hInput * velocidad;
-        }
+        movimiento.x = hInput * velocidad;
         if (controlPersonaje.isGrounded)
         {
-            saltoDoble = false;
             enElAire = false;
-            dashActivo = false;
-            enLaPared = false;
-            coyoteActivo = true;
-            animacion.SetBool("Jumping", false);
-            animacion.SetBool("Running", false);
-            animacion.SetBool("Dash", false);
-            animacion.SetBool("Pared", false);
-            
-            if (tiempoBufferSalto > 0)
-            {
-                Salto();
-            }
+            saltoDoble = true;
+            animacion.SetBool(name: "Saltando", value: false);
+            animacion.SetBool(name: "Caminando", value: false);
         }
         else
         {
-            enElAire = true;
-            ComprobarColisionPared();
-            if (coyoteActivo)
+            if (saltoDoble && Input.GetButtonDown("Jump"))
             {
-                coyoteActivo = false;
-                tiempoCoyote = Time.time;
-                movimiento.y = 0;
+                saltoDoble=false;
+                movimiento.y = FuerzaSalto;
             }
-            if (tiempoCoyote + duracionCoyoteTime < Time.time)
-            {
-                if (saltoDoble && Input.GetButtonDown("Jump"))
-                {
-                    saltoDoble = false;
-                    movimiento.y = fuerzaSalto;
-                }
-                if (!saltoDoble && Input.GetButtonDown("Jump"))
-                {
-                    tiempoBufferSalto = duracionBufferSalto;
-                }
-                animacion.SetBool("Dash", false);
-                tiempoBufferSalto -= Time.deltaTime;
-                movimiento.y -= gravedad * Time.deltaTime;
-            }
+            movimiento.y -= gravedad;
         }
-
         if (hInput != 0)
         {
-            rotacionPersonaje = Quaternion.LookRotation(new Vector3(hInput, 0, 0));
+            rotacionPersonaje = Quaternion.LookRotation(new Vector3(x:hInput, y: 0, z: 0));
             this.transform.rotation = rotacionPersonaje;
-            animacion.SetBool("Running", true);
-
-        }
-        if (Input.GetButtonDown("Jump") && !enElAire)
+            animacion.SetBool(name: "Caminando", value: true);
+        } 
+        if (Input.GetButtonDown("Jump")&& !enElAire)
         {
-            Salto();
+            enElAire= true; 
+            animacion.SetBool(name:"Saltando",value:true);
+            movimiento.y = FuerzaSalto;
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !dashActivo)
-        {
-            StartCoroutine(Dash());
-        }
-        controlPersonaje.Move(movimiento * Time.deltaTime);
-    }
-    public void ActivarSaltosDobles(int cantidadSaltos)
-    {
-        puedeHacerSaltoDoble = true;
-        saltosDoblesDisponibles = cantidadSaltos;
-      
-    }
-    IEnumerator Dash()
-    {
-        float tiempoInicial = Time.time;
-        dashActivo = true;
-
-        while (Time.time < tiempoInicial + duracionDash)
-        {
-            animacion.SetBool("Dash", true);
-            movimiento = this.transform.TransformDirection(Vector3.forward * velocidadDash);
-            movimiento.y = 0;
-            controlPersonaje.Move(movimiento * Time.deltaTime);
-            yield return null;
-        }
-    }
-
-    public void Salto()
-    {
-        ComprobarColisionPared();
-        enElAire = true;
-        coyoteActivo = false;
-        if (enLaPared)
-        {
-            rotacionPersonaje = Quaternion.LookRotation(this.transform.TransformDirection(Vector3.forward * -1));
-            this.transform.rotation = rotacionPersonaje;
-            movimiento = this.transform.TransformDirection(Vector3.forward * saltoParedLateral * velocidad);
-        }
-        enLaPared = false;
-        animacion.SetBool("Pared", false);
-        tiempoCoyote -= duracionCoyoteTime;
-        animacion.SetBool("Jumping", true);
-        movimiento.y = fuerzaSalto;
-        tiempoBufferSalto = 0f;
-    }
-    public void ActivarSaltoDoble()
-    {
-        saltoDoble = true;
-    }
-    void ComprobarColisionPared()
-    {
-        float longitudRaycast = 0.3f;
-        posicionRayCast = this.transform.position;
-        posicionRayCast.y += centradoRayCast;
-        if (Physics.Raycast(posicionRayCast,this.transform.TransformDirection(Vector3.forward), longitudRaycast,ParedLayerMask))
-        {
-            if (controlPersonaje.isGrounded)
-            {
-                movimiento = this.transform.TransformDirection(Vector3.forward) * separacionParedSalto * velocidad * -1;
-            }
-            else
-            {
-                animacion.SetBool("Jumping", false);
-                animacion.SetBool("Running", false);
-                animacion.SetBool("Pared", true);
-                if (!enLaPared)
-                {
-                    movimiento.y = 0;
-                }
-                enLaPared = true;
-                enElAire = false;
-                gravedad = 1.8f;
-            }
-        }
-        else
-        {
-            enLaPared = false;
-            animacion.SetBool("Pared", false);
-            gravedad = 9.8f;
-        }
-
+        controlPersonaje.Move(motion: movimiento * Time.deltaTime);
     }
 }

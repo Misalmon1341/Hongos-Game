@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class CartaBase : MonoBehaviour, ICarta
 {
     [Header("Munición")]
+    public int durabilidadMaxima = 10;
     public int durabilidad;
 
     protected TakeGuns takeGuns;

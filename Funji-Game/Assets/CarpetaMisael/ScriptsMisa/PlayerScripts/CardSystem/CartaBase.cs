@@ -23,6 +23,12 @@ public abstract class CartaBase : MonoBehaviour, ICarta
 
     public abstract void Usar();
     public abstract void UsarHabilidad();
+
+    public void ResetearDurabilidad()
+    {
+        durabilidad = durabilidadMaxima;
+    }
+
     public void Descartar()
     {
         Debug.Log("Descartando carta: " + gameObject.name);

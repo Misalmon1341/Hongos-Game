@@ -11,12 +11,14 @@ public class CartaEscopeta : CartaBase
     public float velocidadPerdigon = 10f;
     public int cantidadPerdigones = 5;
     public float anguloDispersion = 50f;
+    private bool habilidadUsada = false;
 
-    [Header("Láser")]
-    public LineRenderer laserRenderer;
-    public float laserDuracion = 0.1f;
-    public float alcance = 10f;
-    public LayerMask layerDestructible;
+    [Header("RompeParedes")]
+    public GameObject perdigonPrefab2;
+    public Transform spawnPoint2;
+    public float velocidadPerdigon2 = 10f;
+    public int cantidadPerdigones2 = 5;
+    public float anguloDispersion2 = 50f;
 
     public override void Usar()
     {
@@ -25,14 +27,14 @@ public class CartaEscopeta : CartaBase
 
         DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
-        Vector3 direccionBase = movPersonaje.transform.forward; // ← o → según la rotación
+        Vector3 direccionBase = movPersonaje.transform.forward; 
         float inicioAngulo = -anguloDispersion / 2f;
-        float incremento = anguloDispersion / (cantidadPerdigones - 1);
+        float incremento = anguloDispersion / (cantidadPerdigones - 1f);
 
         for (int i = 0; i < cantidadPerdigones; i++)
         {
             float angulo = inicioAngulo + incremento * i;
-            Quaternion rotacionDisparo = Quaternion.AngleAxis(angulo, Vector3.up); // rotación en eje Z
+            Quaternion rotacionDisparo = Quaternion.AngleAxis(angulo, Vector3.up); 
 
             Vector3 direccionDisparo = rotacionDisparo * direccionBase;
 
@@ -53,31 +55,56 @@ public class CartaEscopeta : CartaBase
 
         DisparoHelper.EjecutarAnimacionDisparo(movPersonaje.Animator);
 
-        Vector3 origen = spawnPoint.position;
-        Vector3 direccion = spawnPoint.right;
+        Vector3 direccionBase = movPersonaje.transform.forward;
+        float inicioAngulo = -anguloDispersion2 / 2f;
+        float incremento = cantidadPerdigones2 > 1 ? anguloDispersion2 / (cantidadPerdigones2 - 1) : 0;
 
-        if (Physics.Raycast(origen, direccion, out RaycastHit hit, alcance, layerDestructible))
+        List<Collider> perdigonColliders = new List<Collider>();
+
+        for (int i = 0; i < cantidadPerdigones2; i++)
         {
-            Destroy(hit.collider.gameObject);
+            float angulo = inicioAngulo + incremento * i;
+            Quaternion rotacionDisparo = Quaternion.AngleAxis(angulo, Vector3.up);
+            Vector3 direccionDisparo = rotacionDisparo * direccionBase;
+
+            GameObject perdigon = Instantiate(perdigonPrefab2, spawnPoint2.position, Quaternion.LookRotation(direccionDisparo));
+
+            // Asignar capa adecuada
+            perdigon.layer = LayerMask.NameToLayer("Perdigon");
+
+            // Ignorar colisión con el jugador
+            Collider jugadorCollider = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Collider>();
+            Collider perdigonCollider = perdigon.GetComponent<Collider>();
+            if (jugadorCollider != null && perdigonCollider != null)
+            {
+                Physics.IgnoreCollision(perdigonCollider, jugadorCollider);
+            }
+
+            // Ignorar colisión con el spawn point si tiene collider
+            Collider spawnCollider = spawnPoint2.GetComponent<Collider>();
+            if (spawnCollider != null && perdigonCollider != null)
+            {
+                Physics.IgnoreCollision(perdigonCollider, spawnCollider);
+            }
+
+            // Guardar collider para ignorar entre perdigones
+            if (perdigonCollider != null)
+            {
+                foreach (var other in perdigonColliders)
+                {
+                    Physics.IgnoreCollision(perdigonCollider, other);
+                }
+                perdigonColliders.Add(perdigonCollider);
+            }
+
+            // Aplicar fuerza
+            Rigidbody rb = perdigon.GetComponent<Rigidbody>();
+            rb.velocity = direccionDisparo.normalized * velocidadPerdigon2;
         }
 
-        if (laserRenderer != null)
-        {
-            laserRenderer.SetPosition(0, origen);
-            laserRenderer.SetPosition(1, origen + direccion * alcance);
-            laserRenderer.enabled = true;
-            Invoke(nameof(DesactivarLaser), laserDuracion);
-        }
+        durabilidad--;
+        if (durabilidad <= 0) Descartar();
 
-        durabilidad = 0;
-        Descartar();
-    }
 
-    void DesactivarLaser()
-    {
-        if (laserRenderer != null)
-        {
-            laserRenderer.enabled = false;
-        }
     }
 }

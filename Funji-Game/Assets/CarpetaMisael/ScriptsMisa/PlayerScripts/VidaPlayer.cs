@@ -10,34 +10,21 @@ public class VidaPlayer : MonoBehaviour
 {
     public Sprite[] vidaSprites;        
     public Image imagenVida;             
-    public GameObject panelEstres;       
     public float duracionPanel = 1f;    
     public int vidasTotales = 4;
-    public GameObject gameOver;
-    public GameObject panelGameplay;
+    
 
     private int vidasActuales;
     private bool puedeRecibirDanio = true;
-    private bool poderReiniciar = false;
+    public bool poderReiniciar = false;
+    public PanelController panelController;
 
     void Start()
     {
         vidasActuales = vidasTotales;
         ActualizarSpriteVida();
-        panelEstres.SetActive(false);
-        gameOver.SetActive(false);
-        panelGameplay.SetActive(true);
     }
-    private void Update()
-    {
-        if (poderReiniciar == true)
-        {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-           SceneManager.LoadScene(0);
-        }
-        }
-    }
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && puedeRecibirDanio)
@@ -53,21 +40,16 @@ public class VidaPlayer : MonoBehaviour
         vidasActuales--;
         ActualizarSpriteVida();
 
-        panelEstres.SetActive(true);
+        panelController.panelEstres.SetActive(true);
 
         if (vidasActuales <= 0)
         {
             Morir();
-            Time.timeScale = 0;
-            gameOver.SetActive(true);
-            panelEstres.SetActive(false);
-            panelGameplay.SetActive(false);
-            poderReiniciar = true;
         }
 
         yield return new WaitForSeconds(duracionPanel);
 
-        panelEstres.SetActive(false);
+        panelController.panelEstres.SetActive(false);
         puedeRecibirDanio = true;
     }
 
@@ -80,6 +62,15 @@ public class VidaPlayer : MonoBehaviour
     void Morir()
     {
         Debug.Log("¡Jugador muerto!");
-        Destroy(gameObject);
+
+        GetComponent<Animator>().SetBool("Dead", true); // Si tienes animación
+
+        poderReiniciar = true;
+
+        panelController.gameOver.SetActive(true);
+        panelController.panelEstres.SetActive(false);
+        panelController.panelGameplay.SetActive(false);
+
+        Time.timeScale = 0f; // Pausa el juego
     }
 }

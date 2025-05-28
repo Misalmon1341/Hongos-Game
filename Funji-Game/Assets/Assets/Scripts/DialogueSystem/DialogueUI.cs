@@ -9,6 +9,7 @@ namespace DialogueSystem
     public class DialogueUI : MonoBehaviour
     {
         //DialogueUI
+        [SerializeField] private GameObject panel;
         [SerializeField] private RectTransform dialogbox;
         [SerializeField] private Image characterphoto;
         [SerializeField] private TextMeshProUGUI charactername;
@@ -16,10 +17,12 @@ namespace DialogueSystem
 
         public void ShowDialogBox()
         {
+            panel.SetActive(true);
             dialogbox.gameObject.SetActive(true);
         }
         public void HideDialogBox()
         {   
+            panel.SetActive(false);
             dialogbox.gameObject.SetActive(false);
         }
         public void SetCharacterInfo(DialogueCharacterSo character)

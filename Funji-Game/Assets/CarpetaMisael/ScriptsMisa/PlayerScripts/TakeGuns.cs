@@ -20,6 +20,7 @@ public class TakeGuns : MonoBehaviour
         CartaBase carta = guns[numero].GetComponent<CartaBase>();
         if (carta != null && disparadorCartas != null)
         {
+            carta.ResetearDurabilidad();
             disparadorCartas.cartaActiva = carta;
             Debug.Log("Carta activa asignada: " + carta.name);
         }

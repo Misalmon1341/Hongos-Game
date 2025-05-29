@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -71,6 +70,6 @@ public class VidaPlayer : MonoBehaviour
         panelController.panelEstres.SetActive(false);
         panelController.panelGameplay.SetActive(false);
 
-        Time.timeScale = 0f; // Pausa el juego
+        Time.timeScale = 0f; 
     }
 }

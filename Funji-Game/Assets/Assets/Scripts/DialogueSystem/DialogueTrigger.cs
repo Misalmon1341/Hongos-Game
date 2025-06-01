@@ -22,11 +22,11 @@ namespace DialogueSystem
                 TriggerDialogue();
             }
         }
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerExit(Collider collision)
         {
             if (collision.CompareTag("Player"))
             {
-                TriggerDialogue();
+                Destroy(gameObject);
             }
         }
     }
